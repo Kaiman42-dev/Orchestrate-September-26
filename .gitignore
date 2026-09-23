@@ -1,0 +1,12 @@
+# secrets
+.env
+# transcript (uploaded separately)
+log.txt
+# python
+__pycache__/
+*.pyc
+.venv/
+venv/
+# local caches / build
+.cache/
+code.zip
