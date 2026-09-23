@@ -1,0 +1,68 @@
+{
+ "answer": {
+  "results": [
+   {
+    "message_id": "message_211",
+    "effects": [
+     {
+      "action": "set_income_amount",
+      "evidence": "Your regular salary for the next payroll is INR 103000",
+      "amount": 103000,
+      "currency": "INR",
+      "one_time": true
+     },
+     {
+      "action": "add_one_off_income",
+      "evidence": "one-time arrears adjustment of INR 46350",
+      "amount": 46350,
+      "currency": "INR"
+     }
+    ]
+   },
+   {
+    "message_id": "message_212",
+    "effects": [
+     {
+      "action": "exclude_variable_income",
+      "evidence": "Bonus kuartalan Anda masih menunggu hasil akhir penilaian kinerja"
+     }
+    ]
+   },
+   {
+    "message_id": "message_213",
+    "effects": [
+     {
+      "action": "internal_transfer",
+      "evidence": "Debit dan kredit dengan jumlah yang sama berasal dari transfer antara dua rekening Anda"
+     }
+    ]
+   },
+   {
+    "message_id": "message_214",
+    "effects": [
+     {
+      "action": "exclude_variable_income",
+      "evidence": "The foreign-currency refund is still processing"
+     }
+    ]
+   },
+   {
+    "message_id": "message_215",
+    "effects": [
+     {
+      "action": "exclude_variable_income",
+      "evidence": "Pengembalian dana sudah diproses, tetapi belum masuk ke rekening Anda"
+     }
+    ]
+   }
+  ]
+ },
+ "usage": {
+  "purpose": "messages",
+  "model": "gemini-3.1-flash-lite",
+  "ts": "2026-09-23T20:07:01Z",
+  "input_tokens": 1283,
+  "output_tokens": 432,
+  "thinking_tokens": 0
+ }
+}

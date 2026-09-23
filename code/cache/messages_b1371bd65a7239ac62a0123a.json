@@ -1,0 +1,357 @@
+{
+ "answer": {
+  "results": [
+   {
+    "message_id": "message_31",
+    "effects": [
+     {
+      "action": "add_confirmed_income",
+      "evidence": "Gaji pertama dari perusahaan baru adalah IDR 32870000. Pembayaran sudah dikonfirmasi untuk 2024-09-15",
+      "amount": 32870000,
+      "currency": "IDR",
+      "date": "2024-09-15",
+      "recurring": true
+     }
+    ]
+   },
+   {
+    "message_id": "message_32",
+    "effects": [
+     {
+      "action": "add_confirmed_income",
+      "evidence": "Your first salary will be INR 115000. The confirmed credit date is 2025-02-15",
+      "amount": 115000,
+      "currency": "INR",
+      "date": "2025-02-15",
+      "recurring": true
+     }
+    ]
+   },
+   {
+    "message_id": "message_33",
+    "effects": [
+     {
+      "action": "set_income_amount",
+      "evidence": "Gaji bulanan Anda naik menjadi IDR 17290000",
+      "amount": 17290000,
+      "currency": "IDR",
+      "date": "2026-07-15"
+     }
+    ]
+   },
+   {
+    "message_id": "message_34",
+    "effects": [
+     {
+      "action": "exclude_variable_income",
+      "evidence": "Penghasilan mingguan di aplikasi RideGrid masih dapat berubah sampai pembayaran diselesaikan"
+     }
+    ]
+   },
+   {
+    "message_id": "message_35",
+    "effects": [
+     {
+      "action": "no_effect",
+      "evidence": "Your property maintenance payment was received on 24 July 2026"
+     }
+    ]
+   },
+   {
+    "message_id": "message_36",
+    "effects": [
+     {
+      "action": "set_income_amount",
+      "evidence": "Gaji bulanan sementara Anda adalah IDR 31464000",
+      "amount": 31464000,
+      "currency": "IDR",
+      "one_time": true
+     }
+    ]
+   },
+   {
+    "message_id": "message_37",
+    "effects": [
+     {
+      "action": "end_income",
+      "evidence": "One household employment record has ended"
+     },
+     {
+      "action": "set_income_amount",
+      "evidence": "The remaining confirmed monthly salary is INR 126000",
+      "amount": 126000,
+      "currency": "INR"
+     }
+    ]
+   },
+   {
+    "message_id": "message_38",
+    "effects": [
+     {
+      "action": "add_confirmed_income",
+      "evidence": "Your first salary from the new employer is INR 69000. It is confirmed for 2024-06-15",
+      "amount": 69000,
+      "currency": "INR",
+      "date": "2024-06-15",
+      "recurring": true
+     }
+    ]
+   },
+   {
+    "message_id": "message_39",
+    "effects": [
+     {
+      "action": "exclude_variable_income",
+      "evidence": "Your refund has been initiated but has not reached your account yet"
+     }
+    ]
+   },
+   {
+    "message_id": "message_40",
+    "effects": [
+     {
+      "action": "set_income_amount",
+      "evidence": "Your monthly salary has increased to ZAR 42460",
+      "amount": 42460,
+      "currency": "ZAR",
+      "date": "2026-07-15"
+     }
+    ]
+   },
+   {
+    "message_id": "message_41",
+    "effects": [
+     {
+      "action": "internal_transfer",
+      "evidence": "The matching debit and credit came from a transfer between your two accounts"
+     }
+    ]
+   },
+   {
+    "message_id": "message_42",
+    "effects": [
+     {
+      "action": "end_income",
+      "evidence": "Salah satu sumber pendapatan kerja rumah tangga telah berakhir"
+     },
+     {
+      "action": "set_income_amount",
+      "evidence": "Sisa gaji bulanan yang dikonfirmasi adalah IDR 25840000",
+      "amount": 25840000,
+      "currency": "IDR"
+     }
+    ]
+   },
+   {
+    "message_id": "message_43",
+    "effects": [
+     {
+      "action": "exclude_variable_income",
+      "evidence": "The next WorkDash payout is still pending"
+     }
+    ]
+   },
+   {
+    "message_id": "message_44",
+    "effects": [
+     {
+      "action": "set_income_amount",
+      "evidence": "Your next salary is reduced to USD 530.40",
+      "amount": 530.4,
+      "currency": "USD",
+      "one_time": true
+     }
+    ]
+   },
+   {
+    "message_id": "message_45",
+    "effects": [
+     {
+      "action": "end_income",
+      "evidence": "The current seasonal contract has ended"
+     }
+    ]
+   },
+   {
+    "message_id": "message_46",
+    "effects": [
+     {
+      "action": "add_confirmed_income",
+      "evidence": "The client approved an invoice payment of USD 2112",
+      "amount": 2112,
+      "currency": "USD",
+      "date": "2025-08-15",
+      "recurring": false
+     }
+    ]
+   },
+   {
+    "message_id": "message_47",
+    "effects": [
+     {
+      "action": "exclude_variable_income",
+      "evidence": "The foreign-currency refund is still processing"
+     }
+    ]
+   },
+   {
+    "message_id": "message_48",
+    "effects": [
+     {
+      "action": "exclude_variable_income",
+      "evidence": "Your quarterly bonus is still subject to the final performance review"
+     }
+    ]
+   },
+   {
+    "message_id": "message_49",
+    "effects": [
+     {
+      "action": "add_confirmed_income",
+      "evidence": "The client approved an invoice payment of INR 116000",
+      "amount": 116000,
+      "currency": "INR",
+      "date": "2026-04-15",
+      "recurring": false
+     }
+    ]
+   },
+   {
+    "message_id": "message_50",
+    "effects": [
+     {
+      "action": "move_income_date",
+      "evidence": "Your confirmed salary is now expected on 2025-02-23",
+      "date": "2025-02-23"
+     }
+    ]
+   },
+   {
+    "message_id": "message_51",
+    "effects": [
+     {
+      "action": "scale_recurring_expense",
+      "evidence": "The renewed lease increases monthly rent by 12%",
+      "category": "rent",
+      "percent": 12
+     }
+    ]
+   },
+   {
+    "message_id": "message_52",
+    "effects": [
+     {
+      "action": "no_effect",
+      "evidence": "Your portfolio’s displayed market value has increased substantially"
+     }
+    ]
+   },
+   {
+    "message_id": "message_53",
+    "effects": [
+     {
+      "action": "add_confirmed_income",
+      "evidence": "Gaji sebesar USD 696 dikonfirmasi untuk 2025-05-15",
+      "amount": 696,
+      "currency": "USD",
+      "date": "2025-05-15",
+      "recurring": true
+     }
+    ]
+   },
+   {
+    "message_id": "message_54",
+    "effects": [
+     {
+      "action": "add_confirmed_income",
+      "evidence": "Your first salary will be ZAR 18700. The confirmed credit date is 2026-07-15",
+      "amount": 18700,
+      "currency": "ZAR",
+      "date": "2026-07-15",
+      "recurring": true
+     }
+    ]
+   },
+   {
+    "message_id": "message_55",
+    "effects": [
+     {
+      "action": "scale_recurring_expense",
+      "evidence": "The renewed lease increases monthly rent by 12%",
+      "category": "rent",
+      "percent": 12
+     }
+    ]
+   },
+   {
+    "message_id": "message_56",
+    "effects": [
+     {
+      "action": "add_confirmed_income",
+      "evidence": "The client approved an invoice payment of ZAR 26180",
+      "amount": 26180,
+      "currency": "ZAR",
+      "date": "2025-08-15",
+      "recurring": false
+     }
+    ]
+   },
+   {
+    "message_id": "message_57",
+    "effects": [
+     {
+      "action": "end_income",
+      "evidence": "Your employment has ended"
+     }
+    ]
+   },
+   {
+    "message_id": "message_58",
+    "effects": [
+     {
+      "action": "set_income_amount",
+      "evidence": "Your confirmed base salary is USD 3072",
+      "amount": 3072,
+      "currency": "USD"
+     },
+     {
+      "action": "exclude_variable_income",
+      "evidence": "The commission shown for open deals is still pending approval"
+     }
+    ]
+   },
+   {
+    "message_id": "message_59",
+    "effects": [
+     {
+      "action": "exclude_variable_income",
+      "evidence": "Your refund has been initiated but has not reached your account yet"
+     }
+    ]
+   },
+   {
+    "message_id": "message_60",
+    "effects": [
+     {
+      "action": "set_income_amount",
+      "evidence": "Your confirmed base salary is INR 158000",
+      "amount": 158000,
+      "currency": "INR"
+     },
+     {
+      "action": "exclude_variable_income",
+      "evidence": "The commission shown for open deals is still pending approval"
+     }
+    ]
+   }
+  ]
+ },
+ "usage": {
+  "purpose": "messages",
+  "model": "gemini-3.1-flash-lite",
+  "ts": "2026-09-23T20:02:24Z",
+  "input_tokens": 4328,
+  "output_tokens": 2817,
+  "thinking_tokens": 0
+ }
+}

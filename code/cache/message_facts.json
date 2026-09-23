@@ -1,0 +1,1839 @@
+{
+ "message_01": [
+  {
+   "action": "set_income_amount",
+   "evidence": "Gaji bulanan Anda naik menjadi IDR 42750000",
+   "amount": 42750000,
+   "currency": "IDR",
+   "date": "2025-08-15"
+  }
+ ],
+ "message_02": [
+  {
+   "action": "no_effect",
+   "evidence": "Gaji rutin untuk penggajian berikutnya sudah dikonfirmasi"
+  }
+ ],
+ "message_03": [
+  {
+   "action": "exclude_variable_income",
+   "evidence": "Bonus kuartalan Anda masih menunggu hasil akhir penilaian kinerja"
+  }
+ ],
+ "message_04": [
+  {
+   "action": "set_income_amount",
+   "evidence": "Your temporary monthly pay is EUR 1037.52",
+   "amount": 1037.52,
+   "currency": "EUR",
+   "one_time": true
+  }
+ ],
+ "message_05": [
+  {
+   "action": "move_income_date",
+   "evidence": "Your confirmed salary is now expected on 2024-09-23",
+   "date": "2024-09-23"
+  }
+ ],
+ "message_06": [
+  {
+   "action": "set_income_amount",
+   "evidence": "Your next salary is reduced to EUR 1422.85",
+   "amount": 1422.85,
+   "currency": "EUR",
+   "one_time": true
+  }
+ ],
+ "message_07": [
+  {
+   "action": "exclude_variable_income",
+   "evidence": "The next QuickCrew payout is still pending"
+  }
+ ],
+ "message_08": [
+  {
+   "action": "set_income_amount",
+   "evidence": "Gaji pokok yang dikonfirmasi adalah IDR 38760000",
+   "amount": 38760000,
+   "currency": "IDR"
+  },
+  {
+   "action": "exclude_variable_income",
+   "evidence": "Komisi dari transaksi yang masih berjalan belum disetujui"
+  }
+ ],
+ "message_09": [
+  {
+   "action": "end_income",
+   "evidence": "The current seasonal contract has ended"
+  }
+ ],
+ "message_10": [
+  {
+   "action": "add_confirmed_income",
+   "evidence": "Regular salary of EUR 2717 resumes on 2025-08-15",
+   "amount": 2717,
+   "currency": "EUR",
+   "date": "2025-08-15",
+   "recurring": true
+  },
+  {
+   "action": "add_recurring_expense",
+   "evidence": "A new recurring childcare payment begins in the same month",
+   "category": "childcare",
+   "date": "2025-08-15"
+  }
+ ],
+ "message_11": [
+  {
+   "action": "add_confirmed_income",
+   "evidence": "Your first salary will be EUR 1661",
+   "amount": 1661,
+   "currency": "EUR",
+   "date": "2026-01-15",
+   "recurring": true
+  }
+ ],
+ "message_12": [
+  {
+   "action": "scale_recurring_expense",
+   "evidence": "The renewed lease increases monthly rent by 12%",
+   "category": "rent",
+   "percent": 12
+  }
+ ],
+ "message_13": [
+  {
+   "action": "internal_transfer",
+   "evidence": "The matching debit and credit came from a transfer between your two accounts"
+  }
+ ],
+ "message_14": [
+  {
+   "action": "exclude_variable_income",
+   "evidence": "Your refund has been initiated but has not reached your account yet"
+  }
+ ],
+ "message_15": [
+  {
+   "action": "no_effect",
+   "evidence": "No units have been sold and no cash proceeds have been generated"
+  }
+ ],
+ "message_16": [
+  {
+   "action": "exclude_variable_income",
+   "evidence": "Your prize claim has been verified and is still in payment processing"
+  }
+ ],
+ "message_17": [
+  {
+   "action": "no_effect",
+   "evidence": "The prize proceeds have reached your account"
+  }
+ ],
+ "message_18": [
+  {
+   "action": "add_confirmed_income",
+   "evidence": "Klien menyetujui pembayaran faktur sebesar IDR 30780000",
+   "amount": 30780000,
+   "currency": "IDR",
+   "date": "2025-08-15",
+   "recurring": false
+  }
+ ],
+ "message_19": [
+  {
+   "action": "exclude_variable_income",
+   "evidence": "The next TaskLoop payout is still pending"
+  }
+ ],
+ "message_20": [
+  {
+   "action": "set_income_amount",
+   "evidence": "Your regular salary for the next payroll is EUR 1452",
+   "amount": 1452,
+   "currency": "EUR"
+  },
+  {
+   "action": "add_one_off_income",
+   "evidence": "one-time arrears adjustment of EUR 653.40",
+   "amount": 653.4,
+   "currency": "EUR"
+  }
+ ],
+ "message_21": [
+  {
+   "action": "end_income",
+   "evidence": "The current seasonal contract has ended"
+  }
+ ],
+ "message_22": [
+  {
+   "action": "add_confirmed_income",
+   "evidence": "Your first salary will be ZAR 54120",
+   "amount": 54120,
+   "currency": "ZAR",
+   "date": "2025-02-15",
+   "recurring": true
+  }
+ ],
+ "message_23": [
+  {
+   "action": "internal_transfer",
+   "evidence": "The matching debit and credit came from a transfer between your two accounts"
+  }
+ ],
+ "message_24": [
+  {
+   "action": "add_confirmed_income",
+   "evidence": "The client approved an invoice payment of INR 196000",
+   "amount": 196000,
+   "currency": "INR",
+   "date": "2024-12-15",
+   "recurring": false
+  }
+ ],
+ "message_25": [
+  {
+   "action": "exclude_variable_income",
+   "evidence": "Your refund has been initiated but has not reached your account yet"
+  }
+ ],
+ "message_26": [
+  {
+   "action": "set_income_amount",
+   "evidence": "Your monthly salary has increased to USD 2988",
+   "amount": 2988,
+   "currency": "USD",
+   "date": "2026-07-15"
+  }
+ ],
+ "message_27": [
+  {
+   "action": "set_income_amount",
+   "evidence": "Gaji rutin Anda untuk penggajian berikutnya adalah IDR 21090000",
+   "amount": 21090000,
+   "currency": "IDR"
+  },
+  {
+   "action": "add_one_off_income",
+   "evidence": "penyesuaian tunggakan satu kali sebesar IDR 9490500",
+   "amount": 9490500,
+   "currency": "IDR"
+  }
+ ],
+ "message_28": [
+  {
+   "action": "no_effect",
+   "evidence": "The prize proceeds have reached your account"
+  }
+ ],
+ "message_29": [
+  {
+   "action": "add_confirmed_income",
+   "evidence": "Your first salary will be EUR 1760",
+   "amount": 1760,
+   "currency": "EUR",
+   "date": "2024-06-15",
+   "recurring": true
+  }
+ ],
+ "message_30": [
+  {
+   "action": "end_income",
+   "evidence": "One household employment record has ended"
+  },
+  {
+   "action": "set_income_amount",
+   "evidence": "The remaining confirmed monthly salary is INR 148000",
+   "amount": 148000,
+   "currency": "INR"
+  }
+ ],
+ "message_31": [
+  {
+   "action": "add_confirmed_income",
+   "evidence": "Gaji pertama dari perusahaan baru adalah IDR 32870000. Pembayaran sudah dikonfirmasi untuk 2024-09-15",
+   "amount": 32870000,
+   "currency": "IDR",
+   "date": "2024-09-15",
+   "recurring": true
+  }
+ ],
+ "message_32": [
+  {
+   "action": "add_confirmed_income",
+   "evidence": "Your first salary will be INR 115000. The confirmed credit date is 2025-02-15",
+   "amount": 115000,
+   "currency": "INR",
+   "date": "2025-02-15",
+   "recurring": true
+  }
+ ],
+ "message_33": [
+  {
+   "action": "set_income_amount",
+   "evidence": "Gaji bulanan Anda naik menjadi IDR 17290000",
+   "amount": 17290000,
+   "currency": "IDR",
+   "date": "2026-07-15"
+  }
+ ],
+ "message_34": [
+  {
+   "action": "exclude_variable_income",
+   "evidence": "Penghasilan mingguan di aplikasi RideGrid masih dapat berubah sampai pembayaran diselesaikan"
+  }
+ ],
+ "message_35": [
+  {
+   "action": "no_effect",
+   "evidence": "Your property maintenance payment was received on 24 July 2026"
+  }
+ ],
+ "message_36": [
+  {
+   "action": "set_income_amount",
+   "evidence": "Gaji bulanan sementara Anda adalah IDR 31464000",
+   "amount": 31464000,
+   "currency": "IDR",
+   "one_time": true
+  }
+ ],
+ "message_37": [
+  {
+   "action": "end_income",
+   "evidence": "One household employment record has ended"
+  },
+  {
+   "action": "set_income_amount",
+   "evidence": "The remaining confirmed monthly salary is INR 126000",
+   "amount": 126000,
+   "currency": "INR"
+  }
+ ],
+ "message_38": [
+  {
+   "action": "add_confirmed_income",
+   "evidence": "Your first salary from the new employer is INR 69000. It is confirmed for 2024-06-15",
+   "amount": 69000,
+   "currency": "INR",
+   "date": "2024-06-15",
+   "recurring": true
+  }
+ ],
+ "message_39": [
+  {
+   "action": "exclude_variable_income",
+   "evidence": "Your refund has been initiated but has not reached your account yet"
+  }
+ ],
+ "message_40": [
+  {
+   "action": "set_income_amount",
+   "evidence": "Your monthly salary has increased to ZAR 42460",
+   "amount": 42460,
+   "currency": "ZAR",
+   "date": "2026-07-15"
+  }
+ ],
+ "message_41": [
+  {
+   "action": "internal_transfer",
+   "evidence": "The matching debit and credit came from a transfer between your two accounts"
+  }
+ ],
+ "message_42": [
+  {
+   "action": "end_income",
+   "evidence": "Salah satu sumber pendapatan kerja rumah tangga telah berakhir"
+  },
+  {
+   "action": "set_income_amount",
+   "evidence": "Sisa gaji bulanan yang dikonfirmasi adalah IDR 25840000",
+   "amount": 25840000,
+   "currency": "IDR"
+  }
+ ],
+ "message_43": [
+  {
+   "action": "exclude_variable_income",
+   "evidence": "The next WorkDash payout is still pending"
+  }
+ ],
+ "message_44": [
+  {
+   "action": "set_income_amount",
+   "evidence": "Your next salary is reduced to USD 530.40",
+   "amount": 530.4,
+   "currency": "USD",
+   "one_time": true
+  }
+ ],
+ "message_45": [
+  {
+   "action": "end_income",
+   "evidence": "The current seasonal contract has ended"
+  }
+ ],
+ "message_46": [
+  {
+   "action": "add_confirmed_income",
+   "evidence": "The client approved an invoice payment of USD 2112",
+   "amount": 2112,
+   "currency": "USD",
+   "date": "2025-08-15",
+   "recurring": false
+  }
+ ],
+ "message_47": [
+  {
+   "action": "exclude_variable_income",
+   "evidence": "The foreign-currency refund is still processing"
+  }
+ ],
+ "message_48": [
+  {
+   "action": "exclude_variable_income",
+   "evidence": "Your quarterly bonus is still subject to the final performance review"
+  }
+ ],
+ "message_49": [
+  {
+   "action": "add_confirmed_income",
+   "evidence": "The client approved an invoice payment of INR 116000",
+   "amount": 116000,
+   "currency": "INR",
+   "date": "2026-04-15",
+   "recurring": false
+  }
+ ],
+ "message_50": [
+  {
+   "action": "move_income_date",
+   "evidence": "Your confirmed salary is now expected on 2025-02-23",
+   "date": "2025-02-23"
+  }
+ ],
+ "message_51": [
+  {
+   "action": "scale_recurring_expense",
+   "evidence": "The renewed lease increases monthly rent by 12%",
+   "category": "rent",
+   "percent": 12
+  }
+ ],
+ "message_52": [
+  {
+   "action": "no_effect",
+   "evidence": "Your portfolio’s displayed market value has increased substantially"
+  }
+ ],
+ "message_53": [
+  {
+   "action": "add_confirmed_income",
+   "evidence": "Gaji sebesar USD 696 dikonfirmasi untuk 2025-05-15",
+   "amount": 696,
+   "currency": "USD",
+   "date": "2025-05-15",
+   "recurring": true
+  }
+ ],
+ "message_54": [
+  {
+   "action": "add_confirmed_income",
+   "evidence": "Your first salary will be ZAR 18700. The confirmed credit date is 2026-07-15",
+   "amount": 18700,
+   "currency": "ZAR",
+   "date": "2026-07-15",
+   "recurring": true
+  }
+ ],
+ "message_55": [
+  {
+   "action": "scale_recurring_expense",
+   "evidence": "The renewed lease increases monthly rent by 12%",
+   "category": "rent",
+   "percent": 12
+  }
+ ],
+ "message_56": [
+  {
+   "action": "add_confirmed_income",
+   "evidence": "The client approved an invoice payment of ZAR 26180",
+   "amount": 26180,
+   "currency": "ZAR",
+   "date": "2025-08-15",
+   "recurring": false
+  }
+ ],
+ "message_57": [
+  {
+   "action": "end_income",
+   "evidence": "Your employment has ended"
+  }
+ ],
+ "message_58": [
+  {
+   "action": "set_income_amount",
+   "evidence": "Your confirmed base salary is USD 3072",
+   "amount": 3072,
+   "currency": "USD"
+  },
+  {
+   "action": "exclude_variable_income",
+   "evidence": "The commission shown for open deals is still pending approval"
+  }
+ ],
+ "message_59": [
+  {
+   "action": "exclude_variable_income",
+   "evidence": "Your refund has been initiated but has not reached your account yet"
+  }
+ ],
+ "message_60": [
+  {
+   "action": "set_income_amount",
+   "evidence": "Your confirmed base salary is INR 158000",
+   "amount": 158000,
+   "currency": "INR"
+  },
+  {
+   "action": "exclude_variable_income",
+   "evidence": "The commission shown for open deals is still pending approval"
+  }
+ ],
+ "message_61": [
+  {
+   "action": "scale_recurring_expense",
+   "evidence": "increases monthly rent by 12%",
+   "category": "rent",
+   "percent": 12
+  }
+ ],
+ "message_62": [
+  {
+   "action": "set_income_amount",
+   "evidence": "regular salary for the next payroll is USD 1752",
+   "amount": 1752,
+   "currency": "USD",
+   "one_time": false
+  },
+  {
+   "action": "add_one_off_income",
+   "evidence": "one-time arrears adjustment of USD 788.40",
+   "amount": 788.4,
+   "currency": "USD"
+  }
+ ],
+ "message_63": [
+  {
+   "action": "add_confirmed_income",
+   "evidence": "Regular salary of INR 62000 resumes on 2025-05-15",
+   "amount": 62000,
+   "currency": "INR",
+   "date": "2025-05-15",
+   "recurring": true
+  },
+  {
+   "action": "add_recurring_expense",
+   "evidence": "A new recurring childcare payment begins",
+   "category": "childcare"
+  }
+ ],
+ "message_64": [
+  {
+   "action": "no_effect",
+   "evidence": "tote bag order was paid"
+  }
+ ],
+ "message_65": [
+  {
+   "action": "set_income_amount",
+   "evidence": "Gaji bulanan sementara Anda adalah IDR 8618400",
+   "amount": 8618400,
+   "currency": "IDR",
+   "one_time": true
+  }
+ ],
+ "message_66": [
+  {
+   "action": "add_confirmed_income",
+   "evidence": "Regular salary of INR 251000 resumes on 2026-01-15",
+   "amount": 251000,
+   "currency": "INR",
+   "date": "2026-01-15",
+   "recurring": true
+  },
+  {
+   "action": "add_recurring_expense",
+   "evidence": "A new recurring childcare payment begins",
+   "category": "childcare"
+  }
+ ],
+ "message_67": [
+  {
+   "action": "ignore_suspicious",
+   "evidence": "Pay the release charge today to receive the funds immediately"
+  }
+ ],
+ "message_68": [
+  {
+   "action": "add_one_off_income",
+   "evidence": "client approved an invoice payment of ZAR 13420",
+   "amount": 13420,
+   "currency": "ZAR",
+   "date": "2026-07-15"
+  }
+ ],
+ "message_69": [
+  {
+   "action": "debit_still_due",
+   "evidence": "The bill is still outstanding and another debit will be attempted"
+  }
+ ],
+ "message_70": [
+  {
+   "action": "set_income_amount",
+   "evidence": "confirmed base salary is ZAR 49280",
+   "amount": 49280,
+   "currency": "ZAR"
+  },
+  {
+   "action": "exclude_variable_income",
+   "evidence": "commission shown for open deals is still pending approval"
+  }
+ ],
+ "message_71": [
+  {
+   "action": "no_effect",
+   "evidence": "prize claim has been verified and is still in payment processing"
+  }
+ ],
+ "message_72": [
+  {
+   "action": "add_one_off_income",
+   "evidence": "client approved an invoice payment of EUR 924",
+   "amount": 924,
+   "currency": "EUR",
+   "date": "2024-12-15"
+  }
+ ],
+ "message_73": [
+  {
+   "action": "move_income_date",
+   "evidence": "confirmed salary is now expected on 2025-05-23",
+   "date": "2025-05-23"
+  }
+ ],
+ "message_74": [
+  {
+   "action": "add_confirmed_income",
+   "evidence": "salary of EUR 1804 is confirmed for 2025-08-15",
+   "amount": 1804,
+   "currency": "EUR",
+   "date": "2025-08-15",
+   "recurring": true
+  }
+ ],
+ "message_75": [
+  {
+   "action": "no_effect",
+   "evidence": "prize proceeds have reached your account"
+  }
+ ],
+ "message_76": [
+  {
+   "action": "add_one_off_income",
+   "evidence": "client approved an invoice payment of EUR 1419",
+   "amount": 1419,
+   "currency": "EUR",
+   "date": "2026-04-15"
+  }
+ ],
+ "message_77": [
+  {
+   "action": "set_income_amount",
+   "evidence": "temporary monthly pay is INR 164880",
+   "amount": 164880,
+   "currency": "INR",
+   "one_time": true
+  }
+ ],
+ "message_78": [
+  {
+   "action": "set_income_amount",
+   "evidence": "confirmed base salary is ZAR 35860",
+   "amount": 35860,
+   "currency": "ZAR"
+  },
+  {
+   "action": "exclude_variable_income",
+   "evidence": "commission shown for open deals is still pending approval"
+  }
+ ],
+ "message_79": [
+  {
+   "action": "no_effect",
+   "evidence": "portfolio’s displayed market value has increased"
+  }
+ ],
+ "message_80": [
+  {
+   "action": "add_confirmed_income",
+   "evidence": "first salary from the new employer is EUR 1815",
+   "amount": 1815,
+   "currency": "EUR",
+   "date": "2024-12-15",
+   "recurring": true
+  }
+ ],
+ "message_81": [
+  {
+   "action": "add_confirmed_income",
+   "evidence": "first salary of EUR 2123 is scheduled for 2025-05-15",
+   "amount": 2123,
+   "currency": "EUR",
+   "date": "2025-05-15",
+   "recurring": true
+  }
+ ],
+ "message_82": [
+  {
+   "action": "set_income_amount",
+   "evidence": "confirmed base salary is ZAR 33440",
+   "amount": 33440,
+   "currency": "ZAR"
+  },
+  {
+   "action": "exclude_variable_income",
+   "evidence": "commission shown for open deals is still pending approval"
+  }
+ ],
+ "message_83": [
+  {
+   "action": "add_one_off_income",
+   "evidence": "client approved an invoice payment of ZAR 16720",
+   "amount": 16720,
+   "currency": "ZAR",
+   "date": "2025-08-15"
+  }
+ ],
+ "message_84": [
+  {
+   "action": "end_income",
+   "evidence": "Hubungan kerja Anda telah berakhir"
+  }
+ ],
+ "message_85": [
+  {
+   "action": "add_confirmed_income",
+   "evidence": "first salary will be EUR 627",
+   "amount": 627,
+   "currency": "EUR",
+   "date": "2024-06-15",
+   "recurring": true
+  }
+ ],
+ "message_86": [
+  {
+   "action": "add_confirmed_income",
+   "evidence": "employer has confirmed a USD 1296 salary credit for 15 September 2026",
+   "amount": 1296,
+   "currency": "USD",
+   "date": "2026-09-15",
+   "recurring": true
+  }
+ ],
+ "message_87": [
+  {
+   "action": "set_income_amount",
+   "evidence": "next salary is reduced to INR 148200",
+   "amount": 148200,
+   "currency": "INR"
+  }
+ ],
+ "message_88": [
+  {
+   "action": "no_effect",
+   "evidence": "prize proceeds have reached your account"
+  }
+ ],
+ "message_89": [
+  {
+   "action": "set_income_amount",
+   "evidence": "monthly salary has increased to EUR 1188",
+   "amount": 1188,
+   "currency": "EUR",
+   "date": "2026-07-15"
+  }
+ ],
+ "message_90": [
+  {
+   "action": "set_income_amount",
+   "evidence": "regular salary for the next payroll is EUR 759",
+   "amount": 759,
+   "currency": "EUR",
+   "one_time": false
+  },
+  {
+   "action": "add_one_off_income",
+   "evidence": "one-time arrears adjustment of EUR 341.55",
+   "amount": 341.55,
+   "currency": "EUR"
+  }
+ ],
+ "message_91": [
+  {
+   "action": "set_income_amount",
+   "evidence": "Regular salary of INR 176000 resumes on 2025-05-15",
+   "amount": 176000,
+   "currency": "INR",
+   "date": "2025-05-15",
+   "recurring": true
+  },
+  {
+   "action": "add_recurring_expense",
+   "evidence": "A new recurring childcare payment begins in the same month",
+   "category": "childcare"
+  }
+ ],
+ "message_92": [
+  {
+   "action": "no_effect",
+   "evidence": "Hasil penjualan investasi Anda sudah masuk ke rekening tunai"
+  }
+ ],
+ "message_93": [
+  {
+   "action": "add_confirmed_income",
+   "evidence": "Klien menyetujui pembayaran faktur sebesar IDR 15390000",
+   "amount": 15390000,
+   "currency": "IDR",
+   "date": "2025-08-15",
+   "recurring": false
+  }
+ ],
+ "message_94": [
+  {
+   "action": "exclude_variable_income",
+   "evidence": "Pembayaran berikutnya dari TaskSprint masih tertunda"
+  }
+ ],
+ "message_95": [
+  {
+   "action": "add_confirmed_income",
+   "evidence": "Your salary of EUR 748 is confirmed for 2025-11-15",
+   "amount": 748,
+   "currency": "EUR",
+   "date": "2025-11-15",
+   "recurring": true
+  }
+ ],
+ "message_96": [
+  {
+   "action": "add_confirmed_income",
+   "evidence": "The client approved an invoice payment of INR 152000",
+   "amount": 152000,
+   "currency": "INR",
+   "date": "2026-07-15",
+   "recurring": false
+  }
+ ],
+ "message_97": [
+  {
+   "action": "set_income_amount",
+   "evidence": "Regular salary of ZAR 50160 resumes on 2024-09-15",
+   "amount": 50160,
+   "currency": "ZAR",
+   "date": "2024-09-15",
+   "recurring": true
+  },
+  {
+   "action": "add_recurring_expense",
+   "evidence": "A new recurring childcare payment begins in the same month",
+   "category": "childcare"
+  }
+ ],
+ "message_98": [
+  {
+   "action": "exclude_variable_income",
+   "evidence": "Your quarterly bonus is still subject to the final performance review"
+  }
+ ],
+ "message_99": [
+  {
+   "action": "no_effect",
+   "evidence": "The prize proceeds have reached your account"
+  }
+ ],
+ "message_100": [
+  {
+   "action": "set_income_amount",
+   "evidence": "Your temporary monthly pay is USD 2177.28",
+   "amount": 2177.28,
+   "currency": "USD",
+   "one_time": true
+  }
+ ],
+ "message_101": [
+  {
+   "action": "move_income_date",
+   "evidence": "Your confirmed salary is now expected on 2025-05-23",
+   "date": "2025-05-23"
+  }
+ ],
+ "message_102": [
+  {
+   "action": "set_income_amount",
+   "evidence": "Your next salary is reduced to USD 1193.40",
+   "amount": 1193.4,
+   "currency": "USD",
+   "one_time": true
+  }
+ ],
+ "message_103": [
+  {
+   "action": "end_income",
+   "evidence": "Kontrak musiman saat ini telah berakhir"
+  }
+ ],
+ "message_104": [
+  {
+   "action": "set_income_amount",
+   "evidence": "Your monthly salary has increased to USD 828",
+   "amount": 828,
+   "currency": "USD",
+   "date": "2026-07-15",
+   "recurring": true
+  }
+ ],
+ "message_105": [
+  {
+   "action": "scale_recurring_expense",
+   "evidence": "The renewed lease increases monthly rent by 12%",
+   "category": "rent",
+   "percent": 12
+  }
+ ],
+ "message_106": [
+  {
+   "action": "debit_still_due",
+   "evidence": "The dispute is open and no reversal has been posted yet"
+  }
+ ],
+ "message_107": [
+  {
+   "action": "add_confirmed_income",
+   "evidence": "Your first salary will be ZAR 31900",
+   "amount": 31900,
+   "currency": "ZAR",
+   "date": "2025-02-15",
+   "recurring": true
+  }
+ ],
+ "message_108": [
+  {
+   "action": "no_effect",
+   "evidence": "The proceeds from your investment sale have settled"
+  }
+ ],
+ "message_109": [
+  {
+   "action": "add_confirmed_income",
+   "evidence": "The client approved an invoice payment of USD 2040",
+   "amount": 2040,
+   "currency": "USD",
+   "date": "2024-12-15",
+   "recurring": false
+  }
+ ],
+ "message_110": [
+  {
+   "action": "no_effect",
+   "evidence": "The prize proceeds have reached your account"
+  }
+ ],
+ "message_111": [
+  {
+   "action": "add_confirmed_income",
+   "evidence": "Your first salary will be USD 864",
+   "amount": 864,
+   "currency": "USD",
+   "date": "2026-07-15",
+   "recurring": true
+  }
+ ],
+ "message_112": [
+  {
+   "action": "set_income_amount",
+   "evidence": "Your regular salary for the next payroll is INR 258000",
+   "amount": 258000,
+   "currency": "INR",
+   "recurring": true
+  },
+  {
+   "action": "add_one_off_income",
+   "evidence": "one-time arrears adjustment of INR 116100",
+   "amount": 116100,
+   "currency": "INR",
+   "one_time": true
+  }
+ ],
+ "message_113": [
+  {
+   "action": "set_income_amount",
+   "evidence": "Regular salary of EUR 1529 resumes on 2026-04-15",
+   "amount": 1529,
+   "currency": "EUR",
+   "date": "2026-04-15",
+   "recurring": true
+  },
+  {
+   "action": "add_recurring_expense",
+   "evidence": "A new recurring childcare payment begins in the same month",
+   "category": "childcare"
+  }
+ ],
+ "message_114": [
+  {
+   "action": "no_effect",
+   "evidence": "The proceeds from your investment sale have settled"
+  }
+ ],
+ "message_115": [
+  {
+   "action": "set_income_amount",
+   "evidence": "Your next salary is reduced to EUR 893.75",
+   "amount": 893.75,
+   "currency": "EUR",
+   "one_time": true
+  }
+ ],
+ "message_116": [
+  {
+   "action": "add_confirmed_income",
+   "evidence": "Gaji pertama dari perusahaan baru adalah IDR 46170000",
+   "amount": 46170000,
+   "currency": "IDR",
+   "date": "2024-09-15",
+   "recurring": true
+  }
+ ],
+ "message_117": [
+  {
+   "action": "no_effect",
+   "evidence": "The latest employer credit is the reimbursement for your earlier work expense"
+  }
+ ],
+ "message_118": [
+  {
+   "action": "no_effect",
+   "evidence": "The bill was charged in a foreign currency"
+  }
+ ],
+ "message_119": [
+  {
+   "action": "end_income",
+   "evidence": "One household employment record has ended"
+  },
+  {
+   "action": "set_income_amount",
+   "evidence": "The remaining confirmed monthly salary is EUR 1628",
+   "amount": 1628,
+   "currency": "EUR",
+   "recurring": true
+  }
+ ],
+ "message_120": [
+  {
+   "action": "set_income_amount",
+   "evidence": "Regular salary of INR 84000 resumes on 2025-05-15",
+   "amount": 84000,
+   "currency": "INR",
+   "date": "2025-05-15",
+   "recurring": true
+  },
+  {
+   "action": "add_recurring_expense",
+   "evidence": "A new recurring childcare payment begins in the same month",
+   "category": "childcare"
+  }
+ ],
+ "message_121": [
+  {
+   "action": "debit_still_due",
+   "evidence": "The dispute is open and no reversal has been posted yet."
+  }
+ ],
+ "message_122": [
+  {
+   "action": "set_income_amount",
+   "evidence": "Gaji bulanan sementara Anda adalah IDR 23940000",
+   "amount": 23940000,
+   "currency": "IDR",
+   "one_time": true
+  }
+ ],
+ "message_123": [
+  {
+   "action": "exclude_variable_income",
+   "evidence": "The next ShiftPay payout is still pending."
+  }
+ ],
+ "message_124": [
+  {
+   "action": "add_confirmed_income",
+   "evidence": "Your first salary from the new employer is EUR 1672. It is confirmed for 2024-06-15.",
+   "amount": 1672,
+   "currency": "EUR",
+   "date": "2024-06-15",
+   "recurring": true
+  }
+ ],
+ "message_125": [
+  {
+   "action": "add_confirmed_income",
+   "evidence": "Gaji pertama Anda sebesar IDR 26790000 dijadwalkan pada 2025-11-15.",
+   "amount": 26790000,
+   "currency": "IDR",
+   "date": "2025-11-15",
+   "recurring": true
+  }
+ ],
+ "message_126": [
+  {
+   "action": "set_income_amount",
+   "evidence": "Gaji bulanan Anda naik menjadi IDR 29070000.",
+   "amount": 29070000,
+   "currency": "IDR",
+   "date": "2026-07-15"
+  }
+ ],
+ "message_127": [
+  {
+   "action": "set_income_amount",
+   "evidence": "Gaji rutin Anda untuk penggajian berikutnya adalah IDR 30400000.",
+   "amount": 30400000,
+   "currency": "IDR"
+  },
+  {
+   "action": "add_one_off_income",
+   "evidence": "penyesuaian tunggakan satu kali sebesar IDR 13680000",
+   "amount": 13680000,
+   "currency": "IDR"
+  }
+ ],
+ "message_128": [
+  {
+   "action": "set_income_amount",
+   "evidence": "Gaji pokok yang dikonfirmasi adalah IDR 44270000.",
+   "amount": 44270000,
+   "currency": "IDR"
+  },
+  {
+   "action": "exclude_variable_income",
+   "evidence": "Komisi dari transaksi yang masih berjalan belum disetujui."
+  }
+ ],
+ "message_129": [
+  {
+   "action": "end_income",
+   "evidence": "Your employment has ended."
+  }
+ ],
+ "message_130": [
+  {
+   "action": "add_confirmed_income",
+   "evidence": "The client approved an invoice payment of USD 2340.",
+   "amount": 2340,
+   "currency": "USD",
+   "date": "2024-12-15",
+   "recurring": false
+  }
+ ],
+ "message_131": [
+  {
+   "action": "move_income_date",
+   "evidence": "Your confirmed salary is now expected on 2025-05-23.",
+   "date": "2025-05-23"
+  }
+ ],
+ "message_132": [
+  {
+   "action": "set_income_amount",
+   "evidence": "Your next salary is reduced to INR 137150.",
+   "amount": 137150,
+   "currency": "INR",
+   "one_time": true
+  }
+ ],
+ "message_133": [
+  {
+   "action": "no_effect",
+   "evidence": "The foreign-currency refund is still processing."
+  }
+ ],
+ "message_134": [
+  {
+   "action": "no_effect",
+   "evidence": "Klaim hadiah Anda sudah diverifikasi dan masih dalam proses pembayaran."
+  }
+ ],
+ "message_135": [
+  {
+   "action": "internal_transfer",
+   "evidence": "The matching debit and credit came from a transfer between your two accounts."
+  }
+ ],
+ "message_136": [
+  {
+   "action": "debit_still_due",
+   "evidence": "There are minimum payments due on two separate card accounts this month."
+  }
+ ],
+ "message_137": [
+  {
+   "action": "add_confirmed_income",
+   "evidence": "Your salary of USD 1284 is confirmed for 2025-11-15.",
+   "amount": 1284,
+   "currency": "USD",
+   "date": "2025-11-15",
+   "recurring": true
+  }
+ ],
+ "message_138": [
+  {
+   "action": "set_income_amount",
+   "evidence": "Your temporary monthly pay is EUR 1924.56.",
+   "amount": 1924.56,
+   "currency": "EUR",
+   "one_time": true
+  }
+ ],
+ "message_139": [
+  {
+   "action": "set_income_amount",
+   "evidence": "Your confirmed base salary is EUR 847.",
+   "amount": 847,
+   "currency": "EUR"
+  },
+  {
+   "action": "exclude_variable_income",
+   "evidence": "The commission shown for open deals is still pending approval."
+  }
+ ],
+ "message_140": [
+  {
+   "action": "set_income_amount",
+   "evidence": "Your next salary is reduced to USD 1731.60.",
+   "amount": 1731.6,
+   "currency": "USD",
+   "one_time": true
+  }
+ ],
+ "message_141": [
+  {
+   "action": "add_confirmed_income",
+   "evidence": "The client approved an invoice payment of EUR 2376.",
+   "amount": 2376,
+   "currency": "EUR",
+   "date": "2024-12-15",
+   "recurring": false
+  }
+ ],
+ "message_142": [
+  {
+   "action": "ignore_suspicious",
+   "evidence": "Bayar biaya pencairan hari ini agar dana segera diterima."
+  }
+ ],
+ "message_143": [
+  {
+   "action": "add_confirmed_income",
+   "evidence": "Your first salary will be INR 59000. The confirmed credit date is 2026-07-15.",
+   "amount": 59000,
+   "currency": "INR",
+   "date": "2026-07-15",
+   "recurring": true
+  }
+ ],
+ "message_144": [
+  {
+   "action": "exclude_variable_income",
+   "evidence": "Your quarterly bonus is still subject to the final performance review."
+  }
+ ],
+ "message_145": [
+  {
+   "action": "no_effect",
+   "evidence": "Tagihan dikenakan dalam mata uang asing."
+  }
+ ],
+ "message_146": [
+  {
+   "action": "no_effect",
+   "evidence": "The foreign-currency refund is still processing."
+  }
+ ],
+ "message_147": [
+  {
+   "action": "scale_recurring_expense",
+   "evidence": "The renewed lease increases monthly rent by 12%.",
+   "category": "rent",
+   "percent": 12
+  }
+ ],
+ "message_148": [
+  {
+   "action": "set_income_amount",
+   "evidence": "Your next salary is reduced to ZAR 31889.",
+   "amount": 31889,
+   "currency": "ZAR",
+   "one_time": true
+  }
+ ],
+ "message_149": [
+  {
+   "action": "add_confirmed_income",
+   "evidence": "Your first salary from the new employer is INR 145000. It is confirmed for 2024-09-15.",
+   "amount": 145000,
+   "currency": "INR",
+   "date": "2024-09-15",
+   "recurring": true
+  }
+ ],
+ "message_150": [
+  {
+   "action": "no_effect",
+   "evidence": "The latest employer credit is the reimbursement for your earlier work expense."
+  }
+ ],
+ "message_151": [
+  {
+   "action": "set_income_amount",
+   "evidence": "monthly salary has increased to EUR 627",
+   "amount": 627,
+   "currency": "EUR",
+   "date": "2026-07-15"
+  }
+ ],
+ "message_152": [
+  {
+   "action": "exclude_variable_income",
+   "evidence": "refund has been initiated but has not reached your account yet"
+  }
+ ],
+ "message_153": [
+  {
+   "action": "set_income_amount",
+   "evidence": "temporary monthly pay is EUR 1750.32",
+   "amount": 1750.32,
+   "currency": "EUR",
+   "one_time": true
+  }
+ ],
+ "message_154": [
+  {
+   "action": "move_income_date",
+   "evidence": "confirmed salary is now expected on 2025-08-23",
+   "date": "2025-08-23"
+  }
+ ],
+ "message_155": [
+  {
+   "action": "set_income_amount",
+   "evidence": "next salary is reduced to EUR 1222.65",
+   "amount": 1222.65,
+   "currency": "EUR",
+   "one_time": true
+  }
+ ],
+ "message_156": [
+  {
+   "action": "add_confirmed_income",
+   "evidence": "Gaji pertama Anda sebesar IDR 38190000 dijadwalkan pada 2025-11-15",
+   "amount": 38190000,
+   "currency": "IDR",
+   "date": "2025-11-15",
+   "recurring": true
+  }
+ ],
+ "message_157": [
+  {
+   "action": "debit_still_due",
+   "evidence": "The dispute is open and no reversal has been posted yet"
+  }
+ ],
+ "message_158": [
+  {
+   "action": "exclude_variable_income",
+   "evidence": "Pembayaran berikutnya dari ShiftPay masih tertunda"
+  }
+ ],
+ "message_159": [
+  {
+   "action": "exclude_variable_income",
+   "evidence": "Bonus kuartalan Anda masih menunggu hasil akhir penilaian kinerja"
+  }
+ ],
+ "message_160": [
+  {
+   "action": "end_income",
+   "evidence": "Kontrak musiman saat ini telah berakhir"
+  }
+ ],
+ "message_161": [
+  {
+   "action": "no_effect",
+   "evidence": "minimum payments due on two separate card accounts"
+  }
+ ],
+ "message_162": [
+  {
+   "action": "add_confirmed_income",
+   "evidence": "Your first salary will be EUR 2024",
+   "amount": 2024,
+   "currency": "EUR",
+   "date": "2026-01-15",
+   "recurring": true
+  }
+ ],
+ "message_163": [
+  {
+   "action": "no_effect",
+   "evidence": "Nilai investasi yang ditampilkan telah turun"
+  }
+ ],
+ "message_164": [
+  {
+   "action": "debit_still_due",
+   "evidence": "The dispute is open and no reversal has been posted yet"
+  }
+ ],
+ "message_165": [
+  {
+   "action": "move_income_date",
+   "evidence": "Gaji yang sudah dikonfirmasi kini diperkirakan masuk pada 2025-02-23",
+   "date": "2025-02-23"
+  }
+ ],
+ "message_166": [
+  {
+   "action": "end_income",
+   "evidence": "The current seasonal contract has ended"
+  }
+ ],
+ "message_167": [
+  {
+   "action": "exclude_variable_income",
+   "evidence": "The foreign-currency refund is still processing"
+  }
+ ],
+ "message_168": [
+  {
+   "action": "exclude_variable_income",
+   "evidence": "The next QuickCrew payout is still pending"
+  }
+ ],
+ "message_169": [
+  {
+   "action": "set_income_amount",
+   "evidence": "monthly salary has increased to USD 2424",
+   "amount": 2424,
+   "currency": "USD",
+   "date": "2026-07-15"
+  }
+ ],
+ "message_170": [
+  {
+   "action": "set_income_amount",
+   "evidence": "Regular salary of EUR 1914 resumes",
+   "amount": 1914,
+   "currency": "EUR",
+   "date": "2026-04-15"
+  },
+  {
+   "action": "add_recurring_expense",
+   "evidence": "A new recurring childcare payment begins",
+   "category": "childcare"
+  }
+ ],
+ "message_171": [
+  {
+   "action": "set_income_amount",
+   "evidence": "temporary monthly pay is EUR 1346.40",
+   "amount": 1346.4,
+   "currency": "EUR",
+   "one_time": true
+  }
+ ],
+ "message_172": [
+  {
+   "action": "exclude_variable_income",
+   "evidence": "Your refund has been initiated but has not reached your account yet"
+  }
+ ],
+ "message_173": [
+  {
+   "action": "add_confirmed_income",
+   "evidence": "client approved an invoice payment of ZAR 35200",
+   "amount": 35200,
+   "currency": "ZAR",
+   "date": "2026-01-15",
+   "recurring": false
+  }
+ ],
+ "message_174": [
+  {
+   "action": "no_effect",
+   "evidence": "Pembayaran ini terkait biaya kerja sebelumnya, bukan gaji rutin Anda"
+  }
+ ],
+ "message_175": [
+  {
+   "action": "scale_recurring_expense",
+   "evidence": "Perpanjangan sewa menaikkan biaya sewa bulanan sebesar 12%",
+   "category": "rent",
+   "percent": 12
+  }
+ ],
+ "message_176": [
+  {
+   "action": "set_income_amount",
+   "evidence": "regular salary for the next payroll is INR 260000",
+   "amount": 260000,
+   "currency": "INR"
+  },
+  {
+   "action": "add_one_off_income",
+   "evidence": "one-time arrears adjustment of INR 117000",
+   "amount": 117000,
+   "currency": "INR",
+   "one_time": true
+  }
+ ],
+ "message_177": [
+  {
+   "action": "exclude_variable_income",
+   "evidence": "Your quarterly bonus is still subject to the final performance review"
+  }
+ ],
+ "message_178": [
+  {
+   "action": "add_confirmed_income",
+   "evidence": "Gaji pertama Anda sebesar IDR 30400000",
+   "amount": 30400000,
+   "currency": "IDR",
+   "date": "2026-04-15",
+   "recurring": true
+  }
+ ],
+ "message_179": [
+  {
+   "action": "debit_still_due",
+   "evidence": "The bill is still outstanding and another debit will be attempted"
+  }
+ ],
+ "message_180": [
+  {
+   "action": "set_income_amount",
+   "evidence": "remaining confirmed monthly salary is EUR 2827",
+   "amount": 2827,
+   "currency": "EUR"
+  }
+ ],
+ "message_181": [
+  {
+   "action": "add_confirmed_income",
+   "evidence": "Your first salary will be EUR 2772",
+   "amount": 2772,
+   "currency": "EUR",
+   "date": "2024-06-15",
+   "recurring": true
+  }
+ ],
+ "message_182": [
+  {
+   "action": "add_confirmed_income",
+   "evidence": "Gaji pertama Anda sebesar IDR 16910000 dijadwalkan pada 2025-11-15",
+   "amount": 16910000,
+   "currency": "IDR",
+   "date": "2025-11-15",
+   "recurring": true
+  }
+ ],
+ "message_183": [
+  {
+   "action": "debit_still_due",
+   "evidence": "The extra card charge is still being investigated",
+   "amount": 45.65,
+   "currency": "EUR",
+   "date": "2026-07-03"
+  }
+ ],
+ "message_184": [
+  {
+   "action": "no_effect",
+   "evidence": "The foreign-currency refund is still processing"
+  }
+ ],
+ "message_185": [
+  {
+   "action": "no_effect",
+   "evidence": "Investasi tersebut belum dijual dan tidak ada transaksi tunai"
+  }
+ ],
+ "message_186": [
+  {
+   "action": "end_income",
+   "evidence": "Kontrak musiman saat ini telah berakhir"
+  }
+ ],
+ "message_187": [
+  {
+   "action": "end_income",
+   "evidence": "One household employment record has ended"
+  },
+  {
+   "action": "set_income_amount",
+   "evidence": "The remaining confirmed monthly salary is USD 912",
+   "amount": 912,
+   "currency": "USD"
+  }
+ ],
+ "message_188": [
+  {
+   "action": "add_confirmed_income",
+   "evidence": "Your first salary will be INR 62000",
+   "amount": 62000,
+   "currency": "INR",
+   "date": "2026-01-15",
+   "recurring": true
+  }
+ ],
+ "message_189": [
+  {
+   "action": "end_income",
+   "evidence": "Kontrak musiman saat ini telah berakhir"
+  }
+ ],
+ "message_190": [
+  {
+   "action": "add_confirmed_income",
+   "evidence": "Your first salary of EUR 968 is scheduled for 2025-08-15",
+   "amount": 968,
+   "currency": "EUR",
+   "date": "2025-08-15",
+   "recurring": true
+  }
+ ],
+ "message_191": [
+  {
+   "action": "add_confirmed_income",
+   "evidence": "Your salary of USD 1680 is confirmed for 2025-11-15",
+   "amount": 1680,
+   "currency": "USD",
+   "date": "2025-11-15",
+   "recurring": true
+  }
+ ],
+ "message_192": [
+  {
+   "action": "end_income",
+   "evidence": "Your employment has ended"
+  }
+ ],
+ "message_193": [
+  {
+   "action": "set_income_amount",
+   "evidence": "Your temporary monthly pay is EUR 1528.56",
+   "amount": 1528.56,
+   "currency": "EUR",
+   "one_time": true
+  }
+ ],
+ "message_194": [
+  {
+   "action": "set_income_amount",
+   "evidence": "Your confirmed base salary is USD 1548",
+   "amount": 1548,
+   "currency": "USD"
+  },
+  {
+   "action": "exclude_variable_income",
+   "evidence": "The commission shown for open deals is still pending approval"
+  }
+ ],
+ "message_195": [
+  {
+   "action": "set_income_amount",
+   "evidence": "Your next salary is reduced to USD 702",
+   "amount": 702,
+   "currency": "USD",
+   "one_time": true
+  }
+ ],
+ "message_196": [
+  {
+   "action": "add_confirmed_income",
+   "evidence": "Your first salary from the new employer is ZAR 53680",
+   "amount": 53680,
+   "currency": "ZAR",
+   "date": "2024-12-15",
+   "recurring": true
+  }
+ ],
+ "message_197": [
+  {
+   "action": "debit_still_due",
+   "evidence": "Tagihan kartu tambahan masih dalam penyelidikan",
+   "amount": 988000,
+   "currency": "IDR",
+   "date": "2026-07-04"
+  }
+ ],
+ "message_198": [
+  {
+   "action": "debit_still_due",
+   "evidence": "The bill is still outstanding and another debit will be attempted",
+   "amount": 192,
+   "currency": "EUR",
+   "date": "2024-03-05"
+  }
+ ],
+ "message_199": [
+  {
+   "action": "exclude_variable_income",
+   "evidence": "Your quarterly bonus is still subject to the final performance review"
+  }
+ ],
+ "message_200": [
+  {
+   "action": "add_confirmed_income",
+   "evidence": "Your first salary will be INR 214000",
+   "amount": 214000,
+   "currency": "INR",
+   "date": "2024-06-15",
+   "recurring": true
+  }
+ ],
+ "message_201": [
+  {
+   "action": "debit_still_due",
+   "evidence": "The bill is still outstanding and another debit will be attempted",
+   "amount": 42,
+   "currency": "EUR",
+   "date": "2024-09-02"
+  }
+ ],
+ "message_202": [
+  {
+   "action": "internal_transfer",
+   "evidence": "The matching debit and credit came from a transfer between your two accounts"
+  }
+ ],
+ "message_203": [
+  {
+   "action": "end_income",
+   "evidence": "Salah satu sumber pendapatan kerja rumah tangga telah berakhir"
+  },
+  {
+   "action": "set_income_amount",
+   "evidence": "Sisa gaji bulanan yang dikonfirmasi adalah IDR 48260000",
+   "amount": 48260000,
+   "currency": "IDR"
+  }
+ ],
+ "message_204": [
+  {
+   "action": "add_confirmed_income",
+   "evidence": "Your salary of EUR 1485 is confirmed for 2025-05-15",
+   "amount": 1485,
+   "currency": "EUR",
+   "date": "2025-05-15",
+   "recurring": true
+  }
+ ],
+ "message_205": [
+  {
+   "action": "no_effect",
+   "evidence": "The holding has not been sold and there has been no cash transaction"
+  }
+ ],
+ "message_206": [
+  {
+   "action": "end_income",
+   "evidence": "The current seasonal contract has ended"
+  }
+ ],
+ "message_207": [
+  {
+   "action": "no_effect",
+   "evidence": "No units have been sold and no cash proceeds have been generated"
+  }
+ ],
+ "message_208": [
+  {
+   "action": "no_effect",
+   "evidence": "The bill was charged in a foreign currency"
+  }
+ ],
+ "message_209": [
+  {
+   "action": "exclude_variable_income",
+   "evidence": "Your prize claim has been verified and is still in payment processing"
+  }
+ ],
+ "message_210": [
+  {
+   "action": "add_confirmed_income",
+   "evidence": "Your first salary of ZAR 38280 is scheduled for 2025-11-15",
+   "amount": 38280,
+   "currency": "ZAR",
+   "date": "2025-11-15",
+   "recurring": true
+  }
+ ],
+ "message_211": [
+  {
+   "action": "set_income_amount",
+   "evidence": "Your regular salary for the next payroll is INR 103000",
+   "amount": 103000,
+   "currency": "INR",
+   "one_time": true
+  },
+  {
+   "action": "add_one_off_income",
+   "evidence": "one-time arrears adjustment of INR 46350",
+   "amount": 46350,
+   "currency": "INR"
+  }
+ ],
+ "message_212": [
+  {
+   "action": "exclude_variable_income",
+   "evidence": "Bonus kuartalan Anda masih menunggu hasil akhir penilaian kinerja"
+  }
+ ],
+ "message_213": [
+  {
+   "action": "internal_transfer",
+   "evidence": "Debit dan kredit dengan jumlah yang sama berasal dari transfer antara dua rekening Anda"
+  }
+ ],
+ "message_214": [
+  {
+   "action": "exclude_variable_income",
+   "evidence": "The foreign-currency refund is still processing"
+  }
+ ],
+ "message_215": [
+  {
+   "action": "exclude_variable_income",
+   "evidence": "Pengembalian dana sudah diproses, tetapi belum masuk ke rekening Anda"
+  }
+ ]
+}

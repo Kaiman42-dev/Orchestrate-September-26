@@ -1,0 +1,353 @@
+{
+ "answer": {
+  "results": [
+   {
+    "message_id": "message_121",
+    "effects": [
+     {
+      "action": "debit_still_due",
+      "evidence": "The dispute is open and no reversal has been posted yet."
+     }
+    ]
+   },
+   {
+    "message_id": "message_122",
+    "effects": [
+     {
+      "action": "set_income_amount",
+      "evidence": "Gaji bulanan sementara Anda adalah IDR 23940000",
+      "amount": 23940000,
+      "currency": "IDR",
+      "one_time": true
+     }
+    ]
+   },
+   {
+    "message_id": "message_123",
+    "effects": [
+     {
+      "action": "exclude_variable_income",
+      "evidence": "The next ShiftPay payout is still pending."
+     }
+    ]
+   },
+   {
+    "message_id": "message_124",
+    "effects": [
+     {
+      "action": "add_confirmed_income",
+      "evidence": "Your first salary from the new employer is EUR 1672. It is confirmed for 2024-06-15.",
+      "amount": 1672,
+      "currency": "EUR",
+      "date": "2024-06-15",
+      "recurring": true
+     }
+    ]
+   },
+   {
+    "message_id": "message_125",
+    "effects": [
+     {
+      "action": "add_confirmed_income",
+      "evidence": "Gaji pertama Anda sebesar IDR 26790000 dijadwalkan pada 2025-11-15.",
+      "amount": 26790000,
+      "currency": "IDR",
+      "date": "2025-11-15",
+      "recurring": true
+     }
+    ]
+   },
+   {
+    "message_id": "message_126",
+    "effects": [
+     {
+      "action": "set_income_amount",
+      "evidence": "Gaji bulanan Anda naik menjadi IDR 29070000.",
+      "amount": 29070000,
+      "currency": "IDR",
+      "date": "2026-07-15"
+     }
+    ]
+   },
+   {
+    "message_id": "message_127",
+    "effects": [
+     {
+      "action": "set_income_amount",
+      "evidence": "Gaji rutin Anda untuk penggajian berikutnya adalah IDR 30400000.",
+      "amount": 30400000,
+      "currency": "IDR"
+     },
+     {
+      "action": "add_one_off_income",
+      "evidence": "penyesuaian tunggakan satu kali sebesar IDR 13680000",
+      "amount": 13680000,
+      "currency": "IDR"
+     }
+    ]
+   },
+   {
+    "message_id": "message_128",
+    "effects": [
+     {
+      "action": "set_income_amount",
+      "evidence": "Gaji pokok yang dikonfirmasi adalah IDR 44270000.",
+      "amount": 44270000,
+      "currency": "IDR"
+     },
+     {
+      "action": "exclude_variable_income",
+      "evidence": "Komisi dari transaksi yang masih berjalan belum disetujui."
+     }
+    ]
+   },
+   {
+    "message_id": "message_129",
+    "effects": [
+     {
+      "action": "end_income",
+      "evidence": "Your employment has ended."
+     }
+    ]
+   },
+   {
+    "message_id": "message_130",
+    "effects": [
+     {
+      "action": "add_confirmed_income",
+      "evidence": "The client approved an invoice payment of USD 2340.",
+      "amount": 2340,
+      "currency": "USD",
+      "date": "2024-12-15",
+      "recurring": false
+     }
+    ]
+   },
+   {
+    "message_id": "message_131",
+    "effects": [
+     {
+      "action": "move_income_date",
+      "evidence": "Your confirmed salary is now expected on 2025-05-23.",
+      "date": "2025-05-23"
+     }
+    ]
+   },
+   {
+    "message_id": "message_132",
+    "effects": [
+     {
+      "action": "set_income_amount",
+      "evidence": "Your next salary is reduced to INR 137150.",
+      "amount": 137150,
+      "currency": "INR",
+      "one_time": true
+     }
+    ]
+   },
+   {
+    "message_id": "message_133",
+    "effects": [
+     {
+      "action": "no_effect",
+      "evidence": "The foreign-currency refund is still processing."
+     }
+    ]
+   },
+   {
+    "message_id": "message_134",
+    "effects": [
+     {
+      "action": "no_effect",
+      "evidence": "Klaim hadiah Anda sudah diverifikasi dan masih dalam proses pembayaran."
+     }
+    ]
+   },
+   {
+    "message_id": "message_135",
+    "effects": [
+     {
+      "action": "internal_transfer",
+      "evidence": "The matching debit and credit came from a transfer between your two accounts."
+     }
+    ]
+   },
+   {
+    "message_id": "message_136",
+    "effects": [
+     {
+      "action": "debit_still_due",
+      "evidence": "There are minimum payments due on two separate card accounts this month."
+     }
+    ]
+   },
+   {
+    "message_id": "message_137",
+    "effects": [
+     {
+      "action": "add_confirmed_income",
+      "evidence": "Your salary of USD 1284 is confirmed for 2025-11-15.",
+      "amount": 1284,
+      "currency": "USD",
+      "date": "2025-11-15",
+      "recurring": true
+     }
+    ]
+   },
+   {
+    "message_id": "message_138",
+    "effects": [
+     {
+      "action": "set_income_amount",
+      "evidence": "Your temporary monthly pay is EUR 1924.56.",
+      "amount": 1924.56,
+      "currency": "EUR",
+      "one_time": true
+     }
+    ]
+   },
+   {
+    "message_id": "message_139",
+    "effects": [
+     {
+      "action": "set_income_amount",
+      "evidence": "Your confirmed base salary is EUR 847.",
+      "amount": 847,
+      "currency": "EUR"
+     },
+     {
+      "action": "exclude_variable_income",
+      "evidence": "The commission shown for open deals is still pending approval."
+     }
+    ]
+   },
+   {
+    "message_id": "message_140",
+    "effects": [
+     {
+      "action": "set_income_amount",
+      "evidence": "Your next salary is reduced to USD 1731.60.",
+      "amount": 1731.6,
+      "currency": "USD",
+      "one_time": true
+     }
+    ]
+   },
+   {
+    "message_id": "message_141",
+    "effects": [
+     {
+      "action": "add_confirmed_income",
+      "evidence": "The client approved an invoice payment of EUR 2376.",
+      "amount": 2376,
+      "currency": "EUR",
+      "date": "2024-12-15",
+      "recurring": false
+     }
+    ]
+   },
+   {
+    "message_id": "message_142",
+    "effects": [
+     {
+      "action": "ignore_suspicious",
+      "evidence": "Bayar biaya pencairan hari ini agar dana segera diterima."
+     }
+    ]
+   },
+   {
+    "message_id": "message_143",
+    "effects": [
+     {
+      "action": "add_confirmed_income",
+      "evidence": "Your first salary will be INR 59000. The confirmed credit date is 2026-07-15.",
+      "amount": 59000,
+      "currency": "INR",
+      "date": "2026-07-15",
+      "recurring": true
+     }
+    ]
+   },
+   {
+    "message_id": "message_144",
+    "effects": [
+     {
+      "action": "exclude_variable_income",
+      "evidence": "Your quarterly bonus is still subject to the final performance review."
+     }
+    ]
+   },
+   {
+    "message_id": "message_145",
+    "effects": [
+     {
+      "action": "no_effect",
+      "evidence": "Tagihan dikenakan dalam mata uang asing."
+     }
+    ]
+   },
+   {
+    "message_id": "message_146",
+    "effects": [
+     {
+      "action": "no_effect",
+      "evidence": "The foreign-currency refund is still processing."
+     }
+    ]
+   },
+   {
+    "message_id": "message_147",
+    "effects": [
+     {
+      "action": "scale_recurring_expense",
+      "evidence": "The renewed lease increases monthly rent by 12%.",
+      "category": "rent",
+      "percent": 12
+     }
+    ]
+   },
+   {
+    "message_id": "message_148",
+    "effects": [
+     {
+      "action": "set_income_amount",
+      "evidence": "Your next salary is reduced to ZAR 31889.",
+      "amount": 31889,
+      "currency": "ZAR",
+      "one_time": true
+     }
+    ]
+   },
+   {
+    "message_id": "message_149",
+    "effects": [
+     {
+      "action": "add_confirmed_income",
+      "evidence": "Your first salary from the new employer is INR 145000. It is confirmed for 2024-09-15.",
+      "amount": 145000,
+      "currency": "INR",
+      "date": "2024-09-15",
+      "recurring": true
+     }
+    ]
+   },
+   {
+    "message_id": "message_150",
+    "effects": [
+     {
+      "action": "no_effect",
+      "evidence": "The latest employer credit is the reimbursement for your earlier work expense."
+     }
+    ]
+   }
+  ]
+ },
+ "usage": {
+  "purpose": "messages",
+  "model": "gemini-3.1-flash-lite",
+  "ts": "2026-09-23T20:02:58Z",
+  "input_tokens": 4314,
+  "output_tokens": 2816,
+  "thinking_tokens": 0
+ }
+}

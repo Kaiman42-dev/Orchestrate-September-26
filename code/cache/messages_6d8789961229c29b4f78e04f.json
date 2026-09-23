@@ -1,0 +1,381 @@
+{
+ "answer": {
+  "results": [
+   {
+    "message_id": "message_91",
+    "effects": [
+     {
+      "action": "set_income_amount",
+      "evidence": "Regular salary of INR 176000 resumes on 2025-05-15",
+      "amount": 176000,
+      "currency": "INR",
+      "date": "2025-05-15",
+      "recurring": true
+     },
+     {
+      "action": "add_recurring_expense",
+      "evidence": "A new recurring childcare payment begins in the same month",
+      "category": "childcare"
+     }
+    ]
+   },
+   {
+    "message_id": "message_92",
+    "effects": [
+     {
+      "action": "no_effect",
+      "evidence": "Hasil penjualan investasi Anda sudah masuk ke rekening tunai"
+     }
+    ]
+   },
+   {
+    "message_id": "message_93",
+    "effects": [
+     {
+      "action": "add_confirmed_income",
+      "evidence": "Klien menyetujui pembayaran faktur sebesar IDR 15390000",
+      "amount": 15390000,
+      "currency": "IDR",
+      "date": "2025-08-15",
+      "recurring": false
+     }
+    ]
+   },
+   {
+    "message_id": "message_94",
+    "effects": [
+     {
+      "action": "exclude_variable_income",
+      "evidence": "Pembayaran berikutnya dari TaskSprint masih tertunda"
+     }
+    ]
+   },
+   {
+    "message_id": "message_95",
+    "effects": [
+     {
+      "action": "add_confirmed_income",
+      "evidence": "Your salary of EUR 748 is confirmed for 2025-11-15",
+      "amount": 748,
+      "currency": "EUR",
+      "date": "2025-11-15",
+      "recurring": true
+     }
+    ]
+   },
+   {
+    "message_id": "message_96",
+    "effects": [
+     {
+      "action": "add_confirmed_income",
+      "evidence": "The client approved an invoice payment of INR 152000",
+      "amount": 152000,
+      "currency": "INR",
+      "date": "2026-07-15",
+      "recurring": false
+     }
+    ]
+   },
+   {
+    "message_id": "message_97",
+    "effects": [
+     {
+      "action": "set_income_amount",
+      "evidence": "Regular salary of ZAR 50160 resumes on 2024-09-15",
+      "amount": 50160,
+      "currency": "ZAR",
+      "date": "2024-09-15",
+      "recurring": true
+     },
+     {
+      "action": "add_recurring_expense",
+      "evidence": "A new recurring childcare payment begins in the same month",
+      "category": "childcare"
+     }
+    ]
+   },
+   {
+    "message_id": "message_98",
+    "effects": [
+     {
+      "action": "exclude_variable_income",
+      "evidence": "Your quarterly bonus is still subject to the final performance review"
+     }
+    ]
+   },
+   {
+    "message_id": "message_99",
+    "effects": [
+     {
+      "action": "no_effect",
+      "evidence": "The prize proceeds have reached your account"
+     }
+    ]
+   },
+   {
+    "message_id": "message_100",
+    "effects": [
+     {
+      "action": "set_income_amount",
+      "evidence": "Your temporary monthly pay is USD 2177.28",
+      "amount": 2177.28,
+      "currency": "USD",
+      "one_time": true
+     }
+    ]
+   },
+   {
+    "message_id": "message_101",
+    "effects": [
+     {
+      "action": "move_income_date",
+      "evidence": "Your confirmed salary is now expected on 2025-05-23",
+      "date": "2025-05-23"
+     }
+    ]
+   },
+   {
+    "message_id": "message_102",
+    "effects": [
+     {
+      "action": "set_income_amount",
+      "evidence": "Your next salary is reduced to USD 1193.40",
+      "amount": 1193.4,
+      "currency": "USD",
+      "one_time": true
+     }
+    ]
+   },
+   {
+    "message_id": "message_103",
+    "effects": [
+     {
+      "action": "end_income",
+      "evidence": "Kontrak musiman saat ini telah berakhir"
+     }
+    ]
+   },
+   {
+    "message_id": "message_104",
+    "effects": [
+     {
+      "action": "set_income_amount",
+      "evidence": "Your monthly salary has increased to USD 828",
+      "amount": 828,
+      "currency": "USD",
+      "date": "2026-07-15",
+      "recurring": true
+     }
+    ]
+   },
+   {
+    "message_id": "message_105",
+    "effects": [
+     {
+      "action": "scale_recurring_expense",
+      "evidence": "The renewed lease increases monthly rent by 12%",
+      "category": "rent",
+      "percent": 12
+     }
+    ]
+   },
+   {
+    "message_id": "message_106",
+    "effects": [
+     {
+      "action": "debit_still_due",
+      "evidence": "The dispute is open and no reversal has been posted yet"
+     }
+    ]
+   },
+   {
+    "message_id": "message_107",
+    "effects": [
+     {
+      "action": "add_confirmed_income",
+      "evidence": "Your first salary will be ZAR 31900",
+      "amount": 31900,
+      "currency": "ZAR",
+      "date": "2025-02-15",
+      "recurring": true
+     }
+    ]
+   },
+   {
+    "message_id": "message_108",
+    "effects": [
+     {
+      "action": "no_effect",
+      "evidence": "The proceeds from your investment sale have settled"
+     }
+    ]
+   },
+   {
+    "message_id": "message_109",
+    "effects": [
+     {
+      "action": "add_confirmed_income",
+      "evidence": "The client approved an invoice payment of USD 2040",
+      "amount": 2040,
+      "currency": "USD",
+      "date": "2024-12-15",
+      "recurring": false
+     }
+    ]
+   },
+   {
+    "message_id": "message_110",
+    "effects": [
+     {
+      "action": "no_effect",
+      "evidence": "The prize proceeds have reached your account"
+     }
+    ]
+   },
+   {
+    "message_id": "message_111",
+    "effects": [
+     {
+      "action": "add_confirmed_income",
+      "evidence": "Your first salary will be USD 864",
+      "amount": 864,
+      "currency": "USD",
+      "date": "2026-07-15",
+      "recurring": true
+     }
+    ]
+   },
+   {
+    "message_id": "message_112",
+    "effects": [
+     {
+      "action": "set_income_amount",
+      "evidence": "Your regular salary for the next payroll is INR 258000",
+      "amount": 258000,
+      "currency": "INR",
+      "recurring": true
+     },
+     {
+      "action": "add_one_off_income",
+      "evidence": "one-time arrears adjustment of INR 116100",
+      "amount": 116100,
+      "currency": "INR",
+      "one_time": true
+     }
+    ]
+   },
+   {
+    "message_id": "message_113",
+    "effects": [
+     {
+      "action": "set_income_amount",
+      "evidence": "Regular salary of EUR 1529 resumes on 2026-04-15",
+      "amount": 1529,
+      "currency": "EUR",
+      "date": "2026-04-15",
+      "recurring": true
+     },
+     {
+      "action": "add_recurring_expense",
+      "evidence": "A new recurring childcare payment begins in the same month",
+      "category": "childcare"
+     }
+    ]
+   },
+   {
+    "message_id": "message_114",
+    "effects": [
+     {
+      "action": "no_effect",
+      "evidence": "The proceeds from your investment sale have settled"
+     }
+    ]
+   },
+   {
+    "message_id": "message_115",
+    "effects": [
+     {
+      "action": "set_income_amount",
+      "evidence": "Your next salary is reduced to EUR 893.75",
+      "amount": 893.75,
+      "currency": "EUR",
+      "one_time": true
+     }
+    ]
+   },
+   {
+    "message_id": "message_116",
+    "effects": [
+     {
+      "action": "add_confirmed_income",
+      "evidence": "Gaji pertama dari perusahaan baru adalah IDR 46170000",
+      "amount": 46170000,
+      "currency": "IDR",
+      "date": "2024-09-15",
+      "recurring": true
+     }
+    ]
+   },
+   {
+    "message_id": "message_117",
+    "effects": [
+     {
+      "action": "no_effect",
+      "evidence": "The latest employer credit is the reimbursement for your earlier work expense"
+     }
+    ]
+   },
+   {
+    "message_id": "message_118",
+    "effects": [
+     {
+      "action": "no_effect",
+      "evidence": "The bill was charged in a foreign currency"
+     }
+    ]
+   },
+   {
+    "message_id": "message_119",
+    "effects": [
+     {
+      "action": "end_income",
+      "evidence": "One household employment record has ended"
+     },
+     {
+      "action": "set_income_amount",
+      "evidence": "The remaining confirmed monthly salary is EUR 1628",
+      "amount": 1628,
+      "currency": "EUR",
+      "recurring": true
+     }
+    ]
+   },
+   {
+    "message_id": "message_120",
+    "effects": [
+     {
+      "action": "set_income_amount",
+      "evidence": "Regular salary of INR 84000 resumes on 2025-05-15",
+      "amount": 84000,
+      "currency": "INR",
+      "date": "2025-05-15",
+      "recurring": true
+     },
+     {
+      "action": "add_recurring_expense",
+      "evidence": "A new recurring childcare payment begins in the same month",
+      "category": "childcare"
+     }
+    ]
+   }
+  ]
+ },
+ "usage": {
+  "purpose": "messages",
+  "model": "gemini-3.1-flash-lite",
+  "ts": "2026-09-23T20:02:47Z",
+  "input_tokens": 4627,
+  "output_tokens": 2991,
+  "thinking_tokens": 0
+ }
+}

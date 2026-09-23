@@ -1,0 +1,384 @@
+{
+ "answer": {
+  "results": [
+   {
+    "message_id": "message_61",
+    "effects": [
+     {
+      "action": "scale_recurring_expense",
+      "evidence": "increases monthly rent by 12%",
+      "category": "rent",
+      "percent": 12
+     }
+    ]
+   },
+   {
+    "message_id": "message_62",
+    "effects": [
+     {
+      "action": "set_income_amount",
+      "evidence": "regular salary for the next payroll is USD 1752",
+      "amount": 1752,
+      "currency": "USD",
+      "one_time": false
+     },
+     {
+      "action": "add_one_off_income",
+      "evidence": "one-time arrears adjustment of USD 788.40",
+      "amount": 788.4,
+      "currency": "USD"
+     }
+    ]
+   },
+   {
+    "message_id": "message_63",
+    "effects": [
+     {
+      "action": "add_confirmed_income",
+      "evidence": "Regular salary of INR 62000 resumes on 2025-05-15",
+      "amount": 62000,
+      "currency": "INR",
+      "date": "2025-05-15",
+      "recurring": true
+     },
+     {
+      "action": "add_recurring_expense",
+      "evidence": "A new recurring childcare payment begins",
+      "category": "childcare"
+     }
+    ]
+   },
+   {
+    "message_id": "message_64",
+    "effects": [
+     {
+      "action": "no_effect",
+      "evidence": "tote bag order was paid"
+     }
+    ]
+   },
+   {
+    "message_id": "message_65",
+    "effects": [
+     {
+      "action": "set_income_amount",
+      "evidence": "Gaji bulanan sementara Anda adalah IDR 8618400",
+      "amount": 8618400,
+      "currency": "IDR",
+      "one_time": true
+     }
+    ]
+   },
+   {
+    "message_id": "message_66",
+    "effects": [
+     {
+      "action": "add_confirmed_income",
+      "evidence": "Regular salary of INR 251000 resumes on 2026-01-15",
+      "amount": 251000,
+      "currency": "INR",
+      "date": "2026-01-15",
+      "recurring": true
+     },
+     {
+      "action": "add_recurring_expense",
+      "evidence": "A new recurring childcare payment begins",
+      "category": "childcare"
+     }
+    ]
+   },
+   {
+    "message_id": "message_67",
+    "effects": [
+     {
+      "action": "ignore_suspicious",
+      "evidence": "Pay the release charge today to receive the funds immediately"
+     }
+    ]
+   },
+   {
+    "message_id": "message_68",
+    "effects": [
+     {
+      "action": "add_one_off_income",
+      "evidence": "client approved an invoice payment of ZAR 13420",
+      "amount": 13420,
+      "currency": "ZAR",
+      "date": "2026-07-15"
+     }
+    ]
+   },
+   {
+    "message_id": "message_69",
+    "effects": [
+     {
+      "action": "debit_still_due",
+      "evidence": "The bill is still outstanding and another debit will be attempted"
+     }
+    ]
+   },
+   {
+    "message_id": "message_70",
+    "effects": [
+     {
+      "action": "set_income_amount",
+      "evidence": "confirmed base salary is ZAR 49280",
+      "amount": 49280,
+      "currency": "ZAR"
+     },
+     {
+      "action": "exclude_variable_income",
+      "evidence": "commission shown for open deals is still pending approval"
+     }
+    ]
+   },
+   {
+    "message_id": "message_71",
+    "effects": [
+     {
+      "action": "no_effect",
+      "evidence": "prize claim has been verified and is still in payment processing"
+     }
+    ]
+   },
+   {
+    "message_id": "message_72",
+    "effects": [
+     {
+      "action": "add_one_off_income",
+      "evidence": "client approved an invoice payment of EUR 924",
+      "amount": 924,
+      "currency": "EUR",
+      "date": "2024-12-15"
+     }
+    ]
+   },
+   {
+    "message_id": "message_73",
+    "effects": [
+     {
+      "action": "move_income_date",
+      "evidence": "confirmed salary is now expected on 2025-05-23",
+      "date": "2025-05-23"
+     }
+    ]
+   },
+   {
+    "message_id": "message_74",
+    "effects": [
+     {
+      "action": "add_confirmed_income",
+      "evidence": "salary of EUR 1804 is confirmed for 2025-08-15",
+      "amount": 1804,
+      "currency": "EUR",
+      "date": "2025-08-15",
+      "recurring": true
+     }
+    ]
+   },
+   {
+    "message_id": "message_75",
+    "effects": [
+     {
+      "action": "no_effect",
+      "evidence": "prize proceeds have reached your account"
+     }
+    ]
+   },
+   {
+    "message_id": "message_76",
+    "effects": [
+     {
+      "action": "add_one_off_income",
+      "evidence": "client approved an invoice payment of EUR 1419",
+      "amount": 1419,
+      "currency": "EUR",
+      "date": "2026-04-15"
+     }
+    ]
+   },
+   {
+    "message_id": "message_77",
+    "effects": [
+     {
+      "action": "set_income_amount",
+      "evidence": "temporary monthly pay is INR 164880",
+      "amount": 164880,
+      "currency": "INR",
+      "one_time": true
+     }
+    ]
+   },
+   {
+    "message_id": "message_78",
+    "effects": [
+     {
+      "action": "set_income_amount",
+      "evidence": "confirmed base salary is ZAR 35860",
+      "amount": 35860,
+      "currency": "ZAR"
+     },
+     {
+      "action": "exclude_variable_income",
+      "evidence": "commission shown for open deals is still pending approval"
+     }
+    ]
+   },
+   {
+    "message_id": "message_79",
+    "effects": [
+     {
+      "action": "no_effect",
+      "evidence": "portfolio’s displayed market value has increased"
+     }
+    ]
+   },
+   {
+    "message_id": "message_80",
+    "effects": [
+     {
+      "action": "add_confirmed_income",
+      "evidence": "first salary from the new employer is EUR 1815",
+      "amount": 1815,
+      "currency": "EUR",
+      "date": "2024-12-15",
+      "recurring": true
+     }
+    ]
+   },
+   {
+    "message_id": "message_81",
+    "effects": [
+     {
+      "action": "add_confirmed_income",
+      "evidence": "first salary of EUR 2123 is scheduled for 2025-05-15",
+      "amount": 2123,
+      "currency": "EUR",
+      "date": "2025-05-15",
+      "recurring": true
+     }
+    ]
+   },
+   {
+    "message_id": "message_82",
+    "effects": [
+     {
+      "action": "set_income_amount",
+      "evidence": "confirmed base salary is ZAR 33440",
+      "amount": 33440,
+      "currency": "ZAR"
+     },
+     {
+      "action": "exclude_variable_income",
+      "evidence": "commission shown for open deals is still pending approval"
+     }
+    ]
+   },
+   {
+    "message_id": "message_83",
+    "effects": [
+     {
+      "action": "add_one_off_income",
+      "evidence": "client approved an invoice payment of ZAR 16720",
+      "amount": 16720,
+      "currency": "ZAR",
+      "date": "2025-08-15"
+     }
+    ]
+   },
+   {
+    "message_id": "message_84",
+    "effects": [
+     {
+      "action": "end_income",
+      "evidence": "Hubungan kerja Anda telah berakhir"
+     }
+    ]
+   },
+   {
+    "message_id": "message_85",
+    "effects": [
+     {
+      "action": "add_confirmed_income",
+      "evidence": "first salary will be EUR 627",
+      "amount": 627,
+      "currency": "EUR",
+      "date": "2024-06-15",
+      "recurring": true
+     }
+    ]
+   },
+   {
+    "message_id": "message_86",
+    "effects": [
+     {
+      "action": "add_confirmed_income",
+      "evidence": "employer has confirmed a USD 1296 salary credit for 15 September 2026",
+      "amount": 1296,
+      "currency": "USD",
+      "date": "2026-09-15",
+      "recurring": true
+     }
+    ]
+   },
+   {
+    "message_id": "message_87",
+    "effects": [
+     {
+      "action": "set_income_amount",
+      "evidence": "next salary is reduced to INR 148200",
+      "amount": 148200,
+      "currency": "INR"
+     }
+    ]
+   },
+   {
+    "message_id": "message_88",
+    "effects": [
+     {
+      "action": "no_effect",
+      "evidence": "prize proceeds have reached your account"
+     }
+    ]
+   },
+   {
+    "message_id": "message_89",
+    "effects": [
+     {
+      "action": "set_income_amount",
+      "evidence": "monthly salary has increased to EUR 1188",
+      "amount": 1188,
+      "currency": "EUR",
+      "date": "2026-07-15"
+     }
+    ]
+   },
+   {
+    "message_id": "message_90",
+    "effects": [
+     {
+      "action": "set_income_amount",
+      "evidence": "regular salary for the next payroll is EUR 759",
+      "amount": 759,
+      "currency": "EUR",
+      "one_time": false
+     },
+     {
+      "action": "add_one_off_income",
+      "evidence": "one-time arrears adjustment of EUR 341.55",
+      "amount": 341.55,
+      "currency": "EUR"
+     }
+    ]
+   }
+  ]
+ },
+ "usage": {
+  "purpose": "messages",
+  "model": "gemini-3.1-flash-lite",
+  "ts": "2026-09-23T20:02:37Z",
+  "input_tokens": 4520,
+  "output_tokens": 3001,
+  "thinking_tokens": 0
+ }
+}

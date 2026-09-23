@@ -1,0 +1,357 @@
+{
+ "answer": {
+  "results": [
+   {
+    "message_id": "message_01",
+    "effects": [
+     {
+      "action": "set_income_amount",
+      "evidence": "Gaji bulanan Anda naik menjadi IDR 42750000",
+      "amount": 42750000,
+      "currency": "IDR",
+      "date": "2025-08-15"
+     }
+    ]
+   },
+   {
+    "message_id": "message_02",
+    "effects": [
+     {
+      "action": "no_effect",
+      "evidence": "Gaji rutin untuk penggajian berikutnya sudah dikonfirmasi"
+     }
+    ]
+   },
+   {
+    "message_id": "message_03",
+    "effects": [
+     {
+      "action": "exclude_variable_income",
+      "evidence": "Bonus kuartalan Anda masih menunggu hasil akhir penilaian kinerja"
+     }
+    ]
+   },
+   {
+    "message_id": "message_04",
+    "effects": [
+     {
+      "action": "set_income_amount",
+      "evidence": "Your temporary monthly pay is EUR 1037.52",
+      "amount": 1037.52,
+      "currency": "EUR",
+      "one_time": true
+     }
+    ]
+   },
+   {
+    "message_id": "message_05",
+    "effects": [
+     {
+      "action": "move_income_date",
+      "evidence": "Your confirmed salary is now expected on 2024-09-23",
+      "date": "2024-09-23"
+     }
+    ]
+   },
+   {
+    "message_id": "message_06",
+    "effects": [
+     {
+      "action": "set_income_amount",
+      "evidence": "Your next salary is reduced to EUR 1422.85",
+      "amount": 1422.85,
+      "currency": "EUR",
+      "one_time": true
+     }
+    ]
+   },
+   {
+    "message_id": "message_07",
+    "effects": [
+     {
+      "action": "exclude_variable_income",
+      "evidence": "The next QuickCrew payout is still pending"
+     }
+    ]
+   },
+   {
+    "message_id": "message_08",
+    "effects": [
+     {
+      "action": "set_income_amount",
+      "evidence": "Gaji pokok yang dikonfirmasi adalah IDR 38760000",
+      "amount": 38760000,
+      "currency": "IDR"
+     },
+     {
+      "action": "exclude_variable_income",
+      "evidence": "Komisi dari transaksi yang masih berjalan belum disetujui"
+     }
+    ]
+   },
+   {
+    "message_id": "message_09",
+    "effects": [
+     {
+      "action": "end_income",
+      "evidence": "The current seasonal contract has ended"
+     }
+    ]
+   },
+   {
+    "message_id": "message_10",
+    "effects": [
+     {
+      "action": "add_confirmed_income",
+      "evidence": "Regular salary of EUR 2717 resumes on 2025-08-15",
+      "amount": 2717,
+      "currency": "EUR",
+      "date": "2025-08-15",
+      "recurring": true
+     },
+     {
+      "action": "add_recurring_expense",
+      "evidence": "A new recurring childcare payment begins in the same month",
+      "category": "childcare",
+      "date": "2025-08-15"
+     }
+    ]
+   },
+   {
+    "message_id": "message_11",
+    "effects": [
+     {
+      "action": "add_confirmed_income",
+      "evidence": "Your first salary will be EUR 1661",
+      "amount": 1661,
+      "currency": "EUR",
+      "date": "2026-01-15",
+      "recurring": true
+     }
+    ]
+   },
+   {
+    "message_id": "message_12",
+    "effects": [
+     {
+      "action": "scale_recurring_expense",
+      "evidence": "The renewed lease increases monthly rent by 12%",
+      "category": "rent",
+      "percent": 12
+     }
+    ]
+   },
+   {
+    "message_id": "message_13",
+    "effects": [
+     {
+      "action": "internal_transfer",
+      "evidence": "The matching debit and credit came from a transfer between your two accounts"
+     }
+    ]
+   },
+   {
+    "message_id": "message_14",
+    "effects": [
+     {
+      "action": "exclude_variable_income",
+      "evidence": "Your refund has been initiated but has not reached your account yet"
+     }
+    ]
+   },
+   {
+    "message_id": "message_15",
+    "effects": [
+     {
+      "action": "no_effect",
+      "evidence": "No units have been sold and no cash proceeds have been generated"
+     }
+    ]
+   },
+   {
+    "message_id": "message_16",
+    "effects": [
+     {
+      "action": "exclude_variable_income",
+      "evidence": "Your prize claim has been verified and is still in payment processing"
+     }
+    ]
+   },
+   {
+    "message_id": "message_17",
+    "effects": [
+     {
+      "action": "no_effect",
+      "evidence": "The prize proceeds have reached your account"
+     }
+    ]
+   },
+   {
+    "message_id": "message_18",
+    "effects": [
+     {
+      "action": "add_confirmed_income",
+      "evidence": "Klien menyetujui pembayaran faktur sebesar IDR 30780000",
+      "amount": 30780000,
+      "currency": "IDR",
+      "date": "2025-08-15",
+      "recurring": false
+     }
+    ]
+   },
+   {
+    "message_id": "message_19",
+    "effects": [
+     {
+      "action": "exclude_variable_income",
+      "evidence": "The next TaskLoop payout is still pending"
+     }
+    ]
+   },
+   {
+    "message_id": "message_20",
+    "effects": [
+     {
+      "action": "set_income_amount",
+      "evidence": "Your regular salary for the next payroll is EUR 1452",
+      "amount": 1452,
+      "currency": "EUR"
+     },
+     {
+      "action": "add_one_off_income",
+      "evidence": "one-time arrears adjustment of EUR 653.40",
+      "amount": 653.4,
+      "currency": "EUR"
+     }
+    ]
+   },
+   {
+    "message_id": "message_21",
+    "effects": [
+     {
+      "action": "end_income",
+      "evidence": "The current seasonal contract has ended"
+     }
+    ]
+   },
+   {
+    "message_id": "message_22",
+    "effects": [
+     {
+      "action": "add_confirmed_income",
+      "evidence": "Your first salary will be ZAR 54120",
+      "amount": 54120,
+      "currency": "ZAR",
+      "date": "2025-02-15",
+      "recurring": true
+     }
+    ]
+   },
+   {
+    "message_id": "message_23",
+    "effects": [
+     {
+      "action": "internal_transfer",
+      "evidence": "The matching debit and credit came from a transfer between your two accounts"
+     }
+    ]
+   },
+   {
+    "message_id": "message_24",
+    "effects": [
+     {
+      "action": "add_confirmed_income",
+      "evidence": "The client approved an invoice payment of INR 196000",
+      "amount": 196000,
+      "currency": "INR",
+      "date": "2024-12-15",
+      "recurring": false
+     }
+    ]
+   },
+   {
+    "message_id": "message_25",
+    "effects": [
+     {
+      "action": "exclude_variable_income",
+      "evidence": "Your refund has been initiated but has not reached your account yet"
+     }
+    ]
+   },
+   {
+    "message_id": "message_26",
+    "effects": [
+     {
+      "action": "set_income_amount",
+      "evidence": "Your monthly salary has increased to USD 2988",
+      "amount": 2988,
+      "currency": "USD",
+      "date": "2026-07-15"
+     }
+    ]
+   },
+   {
+    "message_id": "message_27",
+    "effects": [
+     {
+      "action": "set_income_amount",
+      "evidence": "Gaji rutin Anda untuk penggajian berikutnya adalah IDR 21090000",
+      "amount": 21090000,
+      "currency": "IDR"
+     },
+     {
+      "action": "add_one_off_income",
+      "evidence": "penyesuaian tunggakan satu kali sebesar IDR 9490500",
+      "amount": 9490500,
+      "currency": "IDR"
+     }
+    ]
+   },
+   {
+    "message_id": "message_28",
+    "effects": [
+     {
+      "action": "no_effect",
+      "evidence": "The prize proceeds have reached your account"
+     }
+    ]
+   },
+   {
+    "message_id": "message_29",
+    "effects": [
+     {
+      "action": "add_confirmed_income",
+      "evidence": "Your first salary will be EUR 1760",
+      "amount": 1760,
+      "currency": "EUR",
+      "date": "2024-06-15",
+      "recurring": true
+     }
+    ]
+   },
+   {
+    "message_id": "message_30",
+    "effects": [
+     {
+      "action": "end_income",
+      "evidence": "One household employment record has ended"
+     },
+     {
+      "action": "set_income_amount",
+      "evidence": "The remaining confirmed monthly salary is INR 148000",
+      "amount": 148000,
+      "currency": "INR"
+     }
+    ]
+   }
+  ]
+ },
+ "usage": {
+  "purpose": "messages",
+  "model": "gemini-3.1-flash-lite",
+  "ts": "2026-09-23T20:02:07Z",
+  "input_tokens": 4394,
+  "output_tokens": 2749,
+  "thinking_tokens": 0
+ }
+}
