@@ -31,6 +31,7 @@ class Policy:
     project_recurring_income: bool = True    # monthly payroll with history keeps coming
     variable_amount: str = "mean"             # 'last' | 'mean' | 'max' for non-fixed series
     include_first_day_flows: bool = False    # flows dated == request_date already in balance
+    use_facts: bool = True                   # apply facts extracted from messages (LLM, cached)
 
 
 @dataclass
@@ -40,6 +41,7 @@ class Flow:
     source: str            # event id / series key
     label: str
     series: Optional[Series] = None
+    category: str = ""
 
 
 @dataclass
@@ -110,7 +112,8 @@ def build(ds: Dataset, user_id: str, as_of: date, policy: Policy = Policy(),
             continue  # unknown amount: resolved from images later
         day = e.cash_date if e.cash_date >= as_of else as_of
         if in_window(day) or (day == as_of):
-            fc.flows.append(Flow(day if day >= first else first, e.amount_home, e.event_id, e.event.description))
+            fc.flows.append(Flow(day if day >= first else first, e.amount_home, e.event_id, e.event.description,
+                                 category=e.event.category))
 
     series, _ = detect(ledger)
     adjustments = adjustments or {}
@@ -134,7 +137,8 @@ def build(ds: Dataset, user_id: str, as_of: date, policy: Policy = Policy(),
                 if not in_window(d):
                     break
                 if (d.year, d.month) not in confirmed_income_months:
-                    fc.flows.append(Flow(d, e.amount_home, e.event_id, "salary continues monthly"))
+                    fc.flows.append(Flow(d, e.amount_home, e.event_id, "salary continues monthly",
+                                         category="salary"))
                     confirmed_income_months.add((d.year, d.month))
     for s in series:
         if s.direction == "credit" and not policy.project_recurring_income:
@@ -150,7 +154,10 @@ def build(ds: Dataset, user_id: str, as_of: date, policy: Policy = Policy(),
                 continue
             if s.direction == "credit" and s.category == "salary" and (d.year, d.month) in confirmed_income_months:
                 continue  # already represented by the confirmed salary record
-            fc.flows.append(Flow(d, sign * amount, s.last_event_id, s.key, s))
+            fc.flows.append(Flow(d, sign * amount, s.last_event_id, s.key, s, category=s.category))
+    if policy.use_facts:
+        from facts import apply_message_facts
+        apply_message_facts(ds, fc, ledger, as_of)
     fc.flows.sort(key=lambda f: (f.day, f.source))
     return fc
 

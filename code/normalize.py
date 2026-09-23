@@ -77,9 +77,15 @@ def normalize_user(ds: Dataset, user_id: str, as_of: date) -> Ledger:
     for ev in sorted(ds.events_by_user.get(user_id, []), key=lambda e: (e.event_date or date.min, e.event_id)):
         cash_date = ev.settlement_date or ev.event_date
         amount_home = None
-        if ev.amount is not None:
+        raw_amount, raw_currency = ev.amount, ev.currency
+        if raw_amount is None:
+            from facts import image_amount
+            got = image_amount(ev.event_id)
+            if got is not None:
+                raw_amount, raw_currency = got
+        if raw_amount is not None:
             rate_date = ev.event_date or as_of
-            value = ds.fx.convert(ev.amount, ev.currency, profile.home_currency, rate_date)
+            value = ds.fx.convert(raw_amount, raw_currency, profile.home_currency, rate_date)
             amount_home = value if ev.direction == "credit" else -value if ev.direction == "debit" else 0.0
 
         def add(kind: str, note: str = ""):
