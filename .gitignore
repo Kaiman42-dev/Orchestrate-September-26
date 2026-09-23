@@ -10,3 +10,5 @@ venv/
 # local caches / build
 .cache/
 code.zip
+# local evaluation output
+output_samples.csv
