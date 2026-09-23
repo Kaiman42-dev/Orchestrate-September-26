@@ -25,6 +25,8 @@ from normalize import Ledger, LedgerEntry
 MIN_OCCURRENCES = 3
 DAY_TOLERANCE = 2        # allowed jitter for fixed-step cadences
 MONTH_DAY_TOLERANCE = 1  # allowed jitter of the day-of-month for monthly items
+STALE_GRACE_DAYS = 3     # an occurrence missed by more than this ends the series
+ENDING_WORDS = ("final", "last ", "before leave", "closing")
 ONE_OFF_TYPES = {"refund", "investment_purchase", "investment_sale"}
 
 
@@ -72,6 +74,16 @@ class Series:
     @property
     def minimum_allowed(self) -> Optional[float]:
         return self.last.event.minimum_allowed_amount
+
+    def is_active(self, as_of: date) -> bool:
+        """A series is stale when an expected occurrence was missed before as_of,
+        or when its last record says it was the final one (e.g. 'Final employer
+        payroll', 'Payroll before leave')."""
+        desc = self.last.event.description.lower()
+        if any(w in desc for w in ENDING_WORDS):
+            return False
+        missed = self.next_dates(self.last.cash_date, as_of - timedelta(days=STALE_GRACE_DAYS))
+        return not missed
 
     def next_dates(self, after: date, until: date) -> list[date]:
         """Projected occurrence dates in (after, until]."""
