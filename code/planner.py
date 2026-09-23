@@ -130,7 +130,8 @@ def apply_changes(fc: Forecast, changes: tuple[Change, ...]) -> Forecast:
     for f in fc.flows:
         c = by_id.get(f.source) if f.series is not None else None
         flows.append(Flow(f.day, -c.new_amount if c else f.amount, f.source, f.label, f.series) if c else f)
-    return Forecast(start=fc.start, end=fc.end, opening=fc.opening, min_balance=fc.min_balance, flows=flows)
+    return Forecast(start=fc.start, end=fc.end, opening=fc.opening, min_balance=fc.min_balance, flows=flows,
+                    check_until=fc.check_until)
 
 
 # ------------------------------------------------------------ candidates --
@@ -169,7 +170,10 @@ def decide(ds: Dataset, req: Request, policy: Policy = Policy()) -> Decision:
     prof = ledger.profile
     fc = build(ds, req.user_id, req.request_date, policy, ledger=ledger)
     amount_safe = round(fc.amount_safe_today(req.amount), 2)
-    earliest = fc.earliest_full_payment(req.amount)
+    earliest_horizon = fc.earliest_full_payment(req.amount)
+    if policy.safety_window in ("deadline", "hybrid"):
+        fc.check_until = req.deadline
+    earliest = fc.earliest_full_payment(req.amount, last_day=req.deadline)
 
     methods = prof.methods
     options = ds.options_by_request.get(req.request_id, [])
@@ -205,7 +209,12 @@ def decide(ds: Dataset, req: Request, policy: Policy = Policy()) -> Decision:
         status, method = "affordable_later", "wait"
     else:
         status, method = "affordable_with_plan", best.method
-    return Decision(req, amount_safe, earliest, best, status, method, fc)
+    reported = earliest_horizon if policy.safety_window == "hybrid" else earliest
+    if best is not None and best.method == "wait":
+        reported = best.start
+    if status == "affordable_now":
+        reported = req.request_date
+    return Decision(req, amount_safe, reported, best, status, method, fc)
 
 
 def explain(d: Decision, currency: str) -> str:

@@ -151,12 +151,26 @@ def apply_message_facts(ds, fc, ledger, as_of: date) -> None:
         act = e["action"]
         d = _parse(e.get("date"))
         if act == "move_income_date" and d:
-            nxt = [f for f in salary_flows() if f.day > fc.start]
-            if nxt:
-                first = nxt[0]
-                fc.flows = [f for f in fc.flows if f is not first]
-                if in_window(d):
-                    fc.flows.append(Flow(d, first.amount, m["message_id"], "salary moved per message", category="salary"))
+            # the pay date moves to a new day of the month from the next payroll on
+            later = [f for f in salary_flows() if f.day > fc.start]
+            if later:
+                moved = []
+                for i, f in enumerate(later):
+                    if i == 0:
+                        when = d
+                    else:
+                        try:
+                            when = date(f.day.year, f.day.month, d.day)
+                        except ValueError:
+                            when = date(f.day.year, f.day.month, 28)
+                        when = max(when, moved[-1][0] + timedelta(days=1))
+                    moved.append((when, f))
+                ids = {id(f) for f in later}
+                fc.flows = [f for f in fc.flows if id(f) not in ids]
+                for when, f in moved:
+                    if in_window(when):
+                        fc.flows.append(Flow(when, f.amount, m["message_id"], "salary moved per message",
+                                             category="salary"))
         elif act == "add_confirmed_income" and d and e.get("amount") is not None:
             amt = _home(ds, home, float(e["amount"]), e.get("currency"), d)
             dates = list(monthly(d, d.day)) if e.get("recurring") else [d]

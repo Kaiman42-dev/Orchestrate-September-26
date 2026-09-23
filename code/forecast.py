@@ -32,6 +32,7 @@ class Policy:
     variable_amount: str = "mean"             # 'last' | 'mean' | 'max' for non-fixed series
     include_first_day_flows: bool = False    # flows dated == request_date already in balance
     use_facts: bool = True                   # apply facts extracted from messages (LLM, cached)
+    safety_window: str = "hybrid"            # plans checked to the deadline, earliest date over 90 days
 
 
 @dataclass
@@ -51,6 +52,7 @@ class Forecast:
     opening: float
     min_balance: float
     flows: list[Flow] = field(default_factory=list)
+    check_until: Optional[date] = None   # last day the minimum is enforced (default: end)
 
     def balances(self, extra: list[tuple[date, float]] = ()) -> list[tuple[date, float]]:
         """End-of-day balance for every day in [start, end]."""
@@ -68,7 +70,8 @@ class Forecast:
 
     def min_headroom(self, extra: list[tuple[date, float]] = (), since: Optional[date] = None) -> float:
         since = since or self.start
-        return min(b for d, b in self.balances(extra) if d >= since) - self.min_balance
+        until = self.check_until or self.end
+        return min(b for d, b in self.balances(extra) if since <= d <= max(until, since)) - self.min_balance
 
     def is_safe(self, payments: list[tuple[date, float]]) -> bool:
         return self.min_headroom([(d, -a) for d, a in payments]) >= -EPS
@@ -149,8 +152,14 @@ def build(ds: Dataset, user_id: str, as_of: date, policy: Policy = Policy(),
         if s.last_event_id in adjustments:
             amount = adjustments[s.last_event_id] or 0.0
         sign = 1.0 if s.direction == "credit" else -1.0
-        for d in s.next_dates(as_of if policy.include_first_day_flows else as_of, end):
-            if not in_window(d):
+        # an occurrence due on the request date itself is still to be paid when
+        # no settled record exists for it yet
+        for d in s.next_dates(as_of - timedelta(days=1), end):
+            if d == as_of:
+                if (s.last.event.event_date or s.last.cash_date) >= as_of:
+                    continue
+                d = first if not policy.include_first_day_flows else as_of
+            elif not in_window(d):
                 continue
             if s.direction == "credit" and s.category == "salary" and (d.year, d.month) in confirmed_income_months:
                 continue  # already represented by the confirmed salary record

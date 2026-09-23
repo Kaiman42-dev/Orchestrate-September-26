@@ -82,13 +82,14 @@ class Series:
         desc = self.last.event.description.lower()
         if any(w in desc for w in ENDING_WORDS):
             return False
-        missed = self.next_dates(self.last.cash_date, as_of - timedelta(days=STALE_GRACE_DAYS))
+        missed = self.next_dates(self.last.event.event_date or self.last.cash_date,
+                                 as_of - timedelta(days=STALE_GRACE_DAYS))
         return not missed
 
     def next_dates(self, after: date, until: date) -> list[date]:
         """Projected occurrence dates in (after, until]."""
         out: list[date] = []
-        last = self.last.cash_date
+        last = self.last.event.event_date or self.last.cash_date
         if self.cadence == "every_n_days":
             d = last + timedelta(days=self.step_days)
             while d <= until:
@@ -125,7 +126,9 @@ def _months_between(a: date, b: date) -> int:
 def _classify(entries: list[LedgerEntry]) -> Optional[tuple[str, Optional[int], Optional[int]]]:
     if len(entries) < MIN_OCCURRENCES:
         return None
-    dates = [e.cash_date for e in entries]
+    # the schedule is defined by the event date; settlement can lag (e.g. a
+    # payroll dated the 15th that settled on the 23rd)
+    dates = [e.event.event_date or e.cash_date for e in entries]
     gaps = [(b - a).days for a, b in zip(dates, dates[1:])]
     if min(gaps) <= 0:
         return None
@@ -141,7 +144,7 @@ def _classify(entries: list[LedgerEntry]) -> Optional[tuple[str, Optional[int], 
 
 
 def _make(key: str, entries: list[LedgerEntry]) -> Optional[Series]:
-    entries = sorted(entries, key=lambda e: (e.cash_date, e.event_id))
+    entries = sorted(entries, key=lambda e: (e.event.event_date or e.cash_date, e.event_id))
     shape = _classify(entries)
     if not shape:
         return None
