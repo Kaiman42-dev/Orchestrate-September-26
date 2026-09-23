@@ -23,7 +23,7 @@ def run(samples: bool = False) -> str:
     rows = []
     for req in reqs:
         d = decide(ds, req)
-        rows.append(to_row(d, ds.profiles[req.user_id].home_currency))
+        rows.append(to_row(d, ds.profiles[req.user_id].home_currency, ds.events_by_id))
     with open(out_path, "w", newline="", encoding="utf-8") as fh:
         w = csv.DictWriter(fh, fieldnames=COLUMNS)
         w.writeheader()

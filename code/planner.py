@@ -217,28 +217,65 @@ def decide(ds: Dataset, req: Request, policy: Policy = Policy()) -> Decision:
     return Decision(req, amount_safe, reported, best, status, method, fc)
 
 
-def explain(d: Decision, currency: str) -> str:
-    req, p, prof_min = d.request, d.plan, d.base.min_balance
-    amt = lambda x: f"{currency} {x:,.2f}".replace(".00", "")
+def _money(currency: str, x: float) -> str:
+    x = round(x, 2)
+    return f"{currency} {x:,.0f}" if abs(x - round(x)) < 0.005 else f"{currency} {x:,.2f}"
+
+
+def _day(d: date) -> str:
+    return f"{d.day} {d:%B %Y}"
+
+
+def _change_text(c: Change, ds_events: dict, currency: str) -> str:
+    ev = ds_events.get(c.event_id)
+    name = (ev.description if ev else c.category).lower()
+    return f"stop the {name}" if c.action == "stop" else f"reduce the {name} to {_money(currency, c.new_amount)}"
+
+
+def _facts_used(d: Decision) -> str:
+    notes = {f.label for f in d.base.flows if "per message" in f.label}
+    if not notes:
+        return ""
+    parts = []
+    if any("salary" in n for n in notes):
+        parts.append("the latest payroll update")
+    if any("expense" in n or "due" in n for n in notes):
+        parts.append("the latest bill update")
+    if any("income per message" in n and "salary" not in n for n in notes):
+        parts.append("confirmed income in messages")
+    return " The forecast uses " + " and ".join(parts) + "." if parts else ""
+
+
+def explain(d: Decision, currency: str, events: Optional[dict] = None) -> str:
+    events = events or {}
+    req, p, floor = d.request, d.plan, d.base.min_balance
+    m = lambda x: _money(currency, x)
+    extra = _facts_used(d)
     if p is None:
-        return (f"Not recommended by {req.deadline:%d %B %Y}. No eligible payment option keeps the "
-                f"{amt(prof_min)} minimum balance over the next 90 days; only {amt(d.amount_safe)} is safe today.")
+        if d.amount_safe > 0:
+            return (f"Do not proceed with the {m(req.amount)} request. Although {m(d.amount_safe)} is available today, "
+                    f"the full amount cannot be completed safely by {_day(req.deadline)} while keeping the "
+                    f"{m(floor)} minimum.{extra}")
+        return (f"Do not make this payment by {_day(req.deadline)}. None of the available options keeps the "
+                f"{m(floor)} minimum protected.{extra}")
     if d.method == "wait":
-        return f"Wait and pay {amt(req.amount)} on {p.start:%d %B %Y}, when it becomes safe. Only {amt(d.amount_safe)} is safe today."
+        return (f"Pay {m(req.amount)} in full on {_day(p.start)}. Paying earlier would take the balance below the "
+                f"{m(floor)} minimum; only {m(d.amount_safe)} is safe today.{extra}")
     if d.method == "installments":
-        return (f"Use {len(p.payments)} installments of {amt(p.payments[0][1])}, starting {p.start:%d %B %Y}. "
-                f"This keeps at least {amt(prof_min)} available.")
+        return (f"Use {len(p.payments)} installments of {m(p.payments[0][1])}, starting {_day(p.start)}. "
+                f"This leaves at least {m(floor)} available.{extra}")
     if d.method == "partial_payment":
-        return (f"Pay {amt(p.payments[0][1])} today and {amt(p.payments[1][1])} on {p.payments[1][0]:%d %B %Y}. "
-                f"This keeps at least {amt(prof_min)} available.")
-    text = f"Pay {amt(req.amount)} today. This leaves at least {amt(prof_min)} available over the next 90 days."
+        return (f"Pay {m(p.payments[0][1])} today and the remaining {m(p.payments[1][1])} on {_day(p.payments[1][0])}. "
+                f"This completes the full request and keeps the {m(floor)} minimum protected.{extra}")
     if p.changes:
-        text += " This requires " + ", ".join(
-            ("stopping " if c.action == "stop" else f"reducing to {amt(c.new_amount)} ") + c.category for c in p.changes) + "."
-    return text
+        acts = [_change_text(c, events, currency) for c in p.changes]
+        lead = (", ".join(acts[:-1]) + " and " + acts[-1]) if len(acts) > 1 else acts[0]
+        return (f"{lead[0].upper() + lead[1:]}, then pay {m(req.amount)} today. "
+                f"This leaves at least {m(floor)} available.{extra}")
+    return f"Pay {m(req.amount)} today. This leaves at least {m(floor)} available over the next 90 days.{extra}"
 
 
-def to_row(d: Decision, currency: str) -> dict:
+def to_row(d: Decision, currency: str, events: Optional[dict] = None) -> dict:
     p = d.plan
     return {
         "request_id": d.request.request_id,
@@ -248,5 +285,5 @@ def to_row(d: Decision, currency: str) -> dict:
         "payment_plan": "|".join(f"{day.isoformat()}:{fmt_amount(a)}" for day, a in p.payments) if p else "none",
         "earliest_date_for_full_payment": d.earliest.isoformat() if d.earliest else "",
         "spending_changes_needed": "|".join(c.render() for c in p.changes) if p and p.changes else "none",
-        "decision_explanation": explain(d, currency),
+        "decision_explanation": explain(d, currency, events),
     }

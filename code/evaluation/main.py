@@ -43,7 +43,7 @@ def score_samples(verbose: bool) -> dict:
     hits = {f: 0 for f in fields}
     all_ok = 0
     for req in ds.samples:
-        row = to_row(decide(ds, req), ds.profiles[req.user_id].home_currency)
+        row = to_row(decide(ds, req), ds.profiles[req.user_id].home_currency, ds.events_by_id)
         exp = req.expected
         miss = []
         for f in fields:
