@@ -1,0 +1,162 @@
+{
+ "event_253": {
+  "document_type": "payslip",
+  "amount": 4365000,
+  "currency": "IDR",
+  "amount_label": "Net Pay",
+  "confidence": 1,
+  "document_date": "2019-08-31",
+  "due_date": null,
+  "image_id": "image_01"
+ },
+ "event_1442": {
+  "document_type": "receipt",
+  "amount": 100000.0,
+  "currency": "INR",
+  "amount_label": "Balance Due",
+  "confidence": 0.98,
+  "document_date": "2023-08-11",
+  "due_date": null,
+  "image_id": "image_02"
+ },
+ "event_1545": {
+  "document_type": "receipt",
+  "amount": 41272.0,
+  "currency": "INR",
+  "amount_label": "Cash Paid",
+  "confidence": 1.0,
+  "document_date": "2026-02-27",
+  "due_date": null,
+  "image_id": "image_03"
+ },
+ "event_1700": {
+  "document_type": "receipt",
+  "amount": 2854.0,
+  "currency": "INR",
+  "amount_label": "Item Bill",
+  "confidence": 1.0,
+  "document_date": "2024-09-03",
+  "due_date": null,
+  "image_id": "image_04"
+ },
+ "event_1786": {
+  "document_type": "utility bill",
+  "amount": 704.05,
+  "currency": "INR",
+  "amount_label": "Amount due till",
+  "confidence": 1.0,
+  "document_date": null,
+  "due_date": "2026-02-06",
+  "image_id": "image_05"
+ },
+ "event_3051": {
+  "document_type": "invoice",
+  "amount": 1995.0,
+  "currency": "INR",
+  "amount_label": "Total",
+  "confidence": 1.0,
+  "document_date": "2026-01-06",
+  "due_date": null,
+  "image_id": "image_06"
+ },
+ "event_3231": {
+  "document_type": "invoice",
+  "amount": 8528.1,
+  "currency": "INR",
+  "amount_label": "Total",
+  "confidence": 1,
+  "document_date": "2025-10-29",
+  "due_date": null,
+  "image_id": "image_07"
+ },
+ "event_4535": {
+  "document_type": "receipt",
+  "amount": 15339.0,
+  "currency": "INR",
+  "amount_label": "Total Amount Received",
+  "confidence": 1.0,
+  "document_date": "2026-07-24",
+  "due_date": "2026-08-30",
+  "image_id": "image_08"
+ },
+ "event_5170": {
+  "document_type": "receipt",
+  "amount": 723.0,
+  "currency": "INR",
+  "amount_label": "Total Amount Received",
+  "confidence": 1.0,
+  "document_date": "2026-06-07",
+  "due_date": "2026-07-02",
+  "image_id": "image_09"
+ },
+ "event_6033": {
+  "document_type": "invoice",
+  "amount": 79679.26,
+  "currency": "INR",
+  "amount_label": "Total",
+  "confidence": 1.0,
+  "document_date": "2024-06-03",
+  "due_date": null,
+  "image_id": "image_10"
+ },
+ "event_6859": {
+  "document_type": "invoice",
+  "amount": 3650.0,
+  "currency": "INR",
+  "amount_label": "Amount Payable",
+  "confidence": 1.0,
+  "document_date": "2023-01-19",
+  "due_date": null,
+  "image_id": "image_11"
+ },
+ "event_7307": {
+  "document_type": "receipt",
+  "amount": 33.5,
+  "currency": "USD",
+  "amount_label": "Total",
+  "confidence": 1,
+  "document_date": "2025-10-01",
+  "due_date": null,
+  "image_id": "image_12"
+ },
+ "event_7941": {
+  "document_type": "receipt",
+  "amount": 2298,
+  "currency": "INR",
+  "amount_label": "Total paid",
+  "confidence": 1,
+  "document_date": "2026-04-03",
+  "due_date": null,
+  "image_id": "image_13"
+ },
+ "event_9421": {
+  "document_type": "receipt",
+  "amount": 4543,
+  "currency": "INR",
+  "amount_label": "TOTAL",
+  "confidence": 0.95,
+  "document_date": null,
+  "due_date": null,
+  "image_id": "image_14"
+ },
+ "event_9806": {
+  "document_type": "invoice",
+  "amount": 9968.0,
+  "currency": "INR",
+  "amount_label": "Grand Total",
+  "confidence": 1.0,
+  "document_date": "2026-06-07",
+  "due_date": null,
+  "image_id": "image_15"
+ },
+ "event_10521": {
+  "document_type": "invoice",
+  "amount": 393.22,
+  "currency": "INR",
+  "amount_label": "Total",
+  "confidence": 1,
+  "document_date": "2026-09-03",
+  "due_date": null,
+  "image_id": "image_16"
+ }
+}

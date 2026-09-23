@@ -1,0 +1,19 @@
+{
+ "answer": {
+  "document_type": "receipt",
+  "amount": 2854.0,
+  "currency": "INR",
+  "amount_label": "Item Bill",
+  "confidence": 1.0,
+  "document_date": "2024-09-03",
+  "due_date": null
+ },
+ "usage": {
+  "purpose": "image",
+  "model": "gemini-3.1-flash-lite",
+  "ts": "2026-09-23T20:08:14Z",
+  "input_tokens": 1302,
+  "output_tokens": 83,
+  "thinking_tokens": 0
+ }
+}

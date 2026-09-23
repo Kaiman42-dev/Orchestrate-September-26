@@ -1,0 +1,19 @@
+{
+ "answer": {
+  "document_type": "receipt",
+  "amount": 723.0,
+  "currency": "INR",
+  "amount_label": "Total Amount Received",
+  "confidence": 1.0,
+  "document_date": "2026-06-07",
+  "due_date": "2026-07-02"
+ },
+ "usage": {
+  "purpose": "image",
+  "model": "gemini-3.1-flash-lite",
+  "ts": "2026-09-23T20:09:39Z",
+  "input_tokens": 1281,
+  "output_tokens": 93,
+  "thinking_tokens": 0
+ }
+}

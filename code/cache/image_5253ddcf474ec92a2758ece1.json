@@ -1,0 +1,19 @@
+{
+ "answer": {
+  "document_type": "invoice",
+  "amount": 3650.0,
+  "currency": "INR",
+  "amount_label": "Amount Payable",
+  "confidence": 1.0,
+  "document_date": "2023-01-19",
+  "due_date": null
+ },
+ "usage": {
+  "purpose": "image",
+  "model": "gemini-3.1-flash-lite",
+  "ts": "2026-09-23T20:09:58Z",
+  "input_tokens": 1274,
+  "output_tokens": 82,
+  "thinking_tokens": 0
+ }
+}
